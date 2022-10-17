@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+body{
+    background-color:#F5F5F5 !important;
+}
+
+#logoId{
+    color:rgba(33.00000183284283, 45.00000111758709, 99.00000169873238,1)!important;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing:0;
+}
+#discriptionId{
+    color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing:0;
+    
+}
+#smicons{
+    font-size: 10px;
+    margin-top: -40px;
+    margin-left: 60px;
+    position: absolute;
+    color:#263238!important;
+	
+
+}
+
+
+
+#copyright1{
+    font-size: 15px;
+    margin-top: -58px;
+    margin-left: 40px;
+    position: absolute;
+    color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
+	opacity:0.5;
+
+}
+/* .p-3 {
+    padding: 1.2rem!important;
+    left: -67px;
+} */
+#nameId{
+    color:#0A142F!important;
+    font-family: 'Roboto',sans-serif;
+}
+#list1{
+	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
+	opacity:0.5;
+    font-family: 'Roboto',sans-serif;
+}
+#list2{
+	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
+	opacity:0.5;
+    font-family: 'Roboto',sans-serif;
+	
+}
+#list3{
+	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
+	opacity:0.5;
+    font-family: 'Roboto',sans-serif;
+}
+#list4{
+	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
+	opacity:0.5;
+    font-family: 'Roboto',sans-serif;
+	
+}
+
+#exploreId{
+    color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
+    font-family: 'Roboto',sans-serif;
+}
+#limlId1 { 
+	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
+	opacity:0.5;
+    font-family: 'Roboto',sans-serif;
+}
+
+#limlId2 { 
+	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
+	opacity:0.5;
+    font-family: 'Roboto',sans-serif;
+}
+
+#limlId3 { 
+	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
+	opacity:0.5;
+    font-family: 'Roboto',sans-serif;
+}
+#footerID {
+    background-color: #ffffff!important;
+    border-radius: 1.0px;
+    border: 0.3px solid #1A2859;
+}
+
+
+@media screen and (max-width:1200px) {
+    .p-3{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .p-3{
+        text-align: center;
+    }
+}
+@media screen and (max-width:2000px) {
+    .p-3{
+        text-align: center;
+    }
+}
+#copyright{
+    text-align: center;
+}
+.text-para{
+    color: #263238;
+}
