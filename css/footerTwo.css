@@ -6,3 +6,14 @@ border-radius: 6px;
 body{
     background-color:#F5F5F5 !important;
 }
+#btnSubscribe{
+    background-color: #0081FE;
+    color: #fff;
+    box-shadow: 0 4px 9px -4px #3b71ca;
+}
+#textsubscribe{
+    color: #1A2859;
+}
+#copyright{
+    color:#0A142F ;
+}
