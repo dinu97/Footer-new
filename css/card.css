@@ -24,9 +24,9 @@ body{
   align-items: center;
   justify-content: center;
 }
-.main{
-    background-color:var(--second-color);
-    padding:50px 0;
+.main {
+    background-color: #fffdff;
+    padding: 50px 0;
 }
 .card{
     background-color:var(--third-color);
@@ -63,10 +63,11 @@ body{
     font-weight: 500;
     margin-top:5px;
 }
-.image{
+.image {
     position: relative;
-    top:44px;
-    right:13px;
+    top: 34px;
+    right: -7px;
+    margin: 12px;
 }
 .form-control:focus{
     box-shadow: none;
@@ -128,4 +129,9 @@ body{
 }
 .payment:hover{
     color:var(--third-color);
+}
+#countryId{
+    color:var(--first-color);
+    font-size: 13px;
+    font-weight: 500;
 }
