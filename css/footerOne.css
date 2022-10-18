@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold');
 body{
     background-color:#F5F5F5 !important;
 }
 
 #logoId{
     color:rgba(33.00000183284283, 45.00000111758709, 99.00000169873238,1)!important;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
     letter-spacing:0;
 }
 #discriptionId{
     color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
     letter-spacing:0;
     
 }
@@ -41,51 +41,51 @@ body{
 } */
 #nameId{
     color:#0A142F!important;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
 }
 #list1{
 	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
 	opacity:0.5;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
 }
 #list2{
 	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
 	opacity:0.5;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
 	
 }
 #list3{
 	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
 	opacity:0.5;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
 }
 #list4{
 	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
 	opacity:0.5;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
 	
 }
 
 #exploreId{
     color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
 }
 #limlId1 { 
 	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
 	opacity:0.5;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
 }
 
 #limlId2 { 
 	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
 	opacity:0.5;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
 }
 
 #limlId3 { 
 	color:rgba(9.544791430234909, 19.757982194423676, 46.75000101327896, 1)!important;
 	opacity:0.5;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
 }
 #footerID {
     background-color: #ffffff!important;
