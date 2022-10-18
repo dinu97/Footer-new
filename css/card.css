@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold');
 
-/*===== VARIABLES CSS =====*/
-:root{
+#cardId{
+    background: #FFFFFF!important;
+    border: 0.4px solid #E6E6E6!important;
+    border-radius: 8px!important;
+}
+
+/* :root{
   --first-color: #adb5bd;
   --first-color-light: #f3f3fd;
   --second-color: #d146ca;
@@ -9,13 +14,13 @@
   --four-color:#000;
   --body-font: 'Quicksand', sans-serif;
   --normal-font-size: 1rem;
-}
+} */
 
 *,::before,::after{
   box-sizing: border-box;
 }
 
-body{
+/* body{
   margin: 0;
   font-family: var(--body-font);
   background-color: var(--second-color);
@@ -23,7 +28,7 @@ body{
   display:flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .main {
     background-color: #fffdff;
     padding: 50px 0;
@@ -59,16 +64,30 @@ body{
 }
 .labeltxt{
     font-size: 13px;
-    color:var(--first-color);
+    color: rgba(48, 49, 61, 0.8)!important;
     font-weight: 500;
     margin-top:5px;
 }
 .image {
     position: relative;
     top: 34px;
+    right: -74px;
+    margin: 12px;
+}
+
+.image2 {
+    position: relative;
+    top: 34px;
+    right: -42px;
+    margin: 12px;
+}
+.image3 {
+    position: relative;
+    top: 34px;
     right: -7px;
     margin: 12px;
 }
+
 .form-control:focus{
     box-shadow: none;
 }
@@ -131,7 +150,13 @@ body{
     color:var(--third-color);
 }
 #countryId{
-    color:var(--first-color);
+    color:var(--first-color)!important;
     font-size: 13px;
     font-weight: 500;
+}
+.form-control{
+    background: #F6F8FA!important;
+border: 0.4px solid rgba(230, 230, 230, 0.9)!important;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03)!important;
+border-radius: 5px!important;
 }
