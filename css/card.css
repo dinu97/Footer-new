@@ -3,7 +3,7 @@
 #cardId{
     background: #FFFFFF!important;
     border: 0.4px solid #E6E6E6!important;
-    border-radius: 8px!important;
+    border-radius: 20px!important;
 }
 
 /* :root{
@@ -16,9 +16,9 @@
   --normal-font-size: 1rem;
 } */
 
-*,::before,::after{
+/* *,::before,::after{
   box-sizing: border-box;
-}
+} */
 
 /* body{
   margin: 0;
@@ -31,13 +31,13 @@
 } */
 .main {
     background-color: #fffdff;
-    padding: 50px 0;
+    padding: 40px 0;
 }
-.card{
+.cardPayments{
     background-color:var(--third-color);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width:300px;
-    border-radius: 29px;
+    
+    border-radius: 8px;
 }
 .pay{
     font-size: 18px;
@@ -62,71 +62,74 @@
     font-weight: 500;
     color:#000000;
 }
-.labeltxt{
+.cardnumber{
     font-size: 13px;
     color: rgba(48, 49, 61, 0.8)!important;
     font-weight: 500;
-    margin-top:5px;
+    margin-top:18px;
 }
-.image {
+.marstercard {
     position: relative;
-    top: 34px;
+    top: 39px;
     right: -74px;
-    margin: 12px;
+    margin: 14px;
 }
 
-.image2 {
+.amaricanE {
     position: relative;
-    top: 34px;
+    top: 39px;
     right: -42px;
-    margin: 12px;
+    margin: 14px;
 }
-.image3 {
+.visacard {
     position: relative;
-    top: 34px;
+    top: 39px;
     right: -7px;
-    margin: 12px;
+    margin: 14px;
 }
 
-.image4 {
+.cvc-ard {
     position: relative;
-    top: -33px;
+    top: -29px;
     right: -98px;
     margin: -8px;
 }
 .form-control:focus{
     box-shadow: none;
 }
-.inputtxt{
+.accountnumber{
     color:var(--four-color) !important;
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 12px;
     padding:7px 46px -2px 2px;
     border:2px solid var(--first-color);
     border-radius: 7px;
 }
 .exptxt{
-    color:var(--first-color);
     font-size: 13px;
+    color: rgba(48, 49, 61, 0.8)!important;
     font-weight: 500;
+    margin-top: 5px;
 }
 .cvvtxt{
-    color: var(--first-color);
     font-size: 13px;
+    color: rgba(48, 49, 61, 0.8)!important;
     font-weight: 500;
+    margin-top: 5px;
 }
 .expiry{
     padding:7px 46px -2px 2px;
     width:120px;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 400;
     border:2px solid var(--first-color);
     border-radius: 7px;
     
 }
 .cvv {
-    padding:7px 46px -2px 2px;
+    padding:6.5px ;
     width:125px;
+    font-size: 15px;
     border:2px solid var(--first-color);
     border-radius: 7px;
 }
@@ -164,17 +167,50 @@
     color:var(--third-color);
 }
 #countryId{
-    color:var(--first-color)!important;
     font-size: 13px;
+    color: rgba(48, 49, 61, 0.8)!important;
     font-weight: 500;
+    margin-top: 5px;
 }
-.form-control{
-    background: #F6F8FA!important;
+/* .form-control{
+    background: #F6F8FA;
 border: 0.4px solid rgba(230, 230, 230, 0.9)!important;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03)!important;
 border-radius: 5px!important;
-}
-.pt-4 {
+
+} */
+#datepicker{
     padding-top: 1.5rem!important;
     margin-bottom: -19px!important;
+}
+.accountnumber{
+    font-size: 12px;
+   
+    background: #FFFFFF;
+border: 0.4px solid #E6E6E6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+border-radius: 5px;
+}
+.expiry{
+    font-size: 12px;
+    
+   
+    background: #FFFFFF;
+border: 0.4px solid #E6E6E6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+border-radius: 5px;
+}
+.cvv{
+    font-size: 12px;
+    background: #FFFFFF;
+border: 0.4px solid #E6E6E6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+border-radius: 5px;
+}
+.selectcountry{
+    font-size: 12px;
+    background: #FFFFFF;
+border: 0.4px solid #E6E6E6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+border-radius: 5px;
 }
