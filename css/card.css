@@ -162,12 +162,12 @@ border-radius: 8px;
     font-size: 10px;
     background-color: var(--second-color);
     border: none;
-    /* max-width: 400px;
+    max-width: 400px;
     margin: 90px auto;
     height: auto;
     padding-top: 70px;
     border-radius: 5px;
-    position: relative; */
+    position: relative;
     color: var(--third-color);
    
 }

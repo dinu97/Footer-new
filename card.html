@@ -29,7 +29,8 @@
 <body>
   
   <div class="container mt-4 d-flex justify-content-center main">
-    <div class="col-12 col-lg-9 col-xl-8 cardPayments" id="cardId">
+    <form name="cardform" method="post" onsubmit="checkforblank()">
+    <div class=" cardPayments" id="cardId">
         
         <div class="px-3 pt-1 form-group">
             <label for="card number" class="d-flex justify-content-between">
@@ -212,6 +213,7 @@
         </div>
          -->
     </div>
+  </form>
 </div>
   
 
