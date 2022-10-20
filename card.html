@@ -1,238 +1,245 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
-    <link rel="stylesheet" href="css/card.css" class="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Material Design for Bootstrap</title>
+        <link rel="stylesheet" href="css/card.css" class="stylesheet">
 
-    <!-- Font Awesome -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- MDB -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
-      rel="stylesheet"
-    />
+            <!-- Font Awesome -->
+            <link
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                rel="stylesheet"
+            />
+            <!-- Google Fonts -->
+            <link
+                href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+                rel="stylesheet"
+            />
+            <!-- MDB -->
+            <link
+                href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+                rel="stylesheet"
+            />
 
-  </head>
-
-<body>
-  
-  <div class="container mt-4 d-flex justify-content-center main">
-    <form name="cardform" method="post" onsubmit="checkforblank()">
-    <div class=" cardPayments" id="cardId">
-        
-        <div class="px-3 pt-1 form-group">
-            <label for="card number" class="d-flex justify-content-between">
-                <span class="cardnumber">Card number</span>
-                <img src="images/marstercardIcon.png" width="25" class="marstercard">
-                
-                <img src="images/americanexpressIcon.png" width="25" class="amaricanE">
-                
-                <img src="images/visaIcon.png" width="25" class="visacard">
-
-            </label>
-            
-            <input type="text" maxlength= "19"  name="number" id="formControlSm" class="form-control accountnumber" placeholder="1234 1234 1234 1234"   onkeypress="cardspace()" required>
-          
-        </div>
-       
-        <div class="d-flex justify-content-between  px-3 pt-2 " id="datepicker">
-             <div class="form-group">
-                 <label for="start" class="exptxt">Expiration</label>
-                 <input type="text"  maxlength="7" id="card__input" name="trip-start" class="form-control start" placeholder="MM / YY" onkeypress="addslashes()">
-
-                 
-             </div>
-             <div class="space">
-            </div>
-             <div class="form-group">
-                <label for="cvv" class="cvvtxt">CVC</label>
-                <input type="number" id="cvv" maxlength="3"  name="number" class="form-control cvv" placeholder="123">
-                <img src="images/cardIcon.png" width="20" class="cvc-ard">
-            </div>
-        </div>
-
-        <!-- 2 column grid layout with text inputs for the first and last names -->
- 
-        <!-- <div class="px-3 pt-3">
-            <label for="card number" class="d-flex justify-content-between">
-                <span class="labeltxt">CARD NUMBER</span>
-               
-                <img src="components/card/images/card.png" width="25" class="cvc-ard">
-            </label>
-            <input type="number" name="number" class="form-control inputtxt" placeholder="8881 2545 2545 2245">
-        </div> -->
-
-        <div class="px-3 pt-2 form-group">
-            <label for="card-number" class="d-flex justify-content-between" id="countryId"> Country</label>
-            <select id="card-number" class="form-control selectcountry">
-            <option>select country</option>
-            <option value="SL">Sri Lanka</option>
-            <option value="AX">Aland Islands</option>
-            <option value="AL">Albania</option>
-            <option value="DZ">Algeria</option>
-            <option value="AS">American Samoa</option>
-            <option value="AD">Andorra</option>
-            <option value="AO">Angola</option>
-            <option value="AI">Anguilla</option>
-            <option value="AQ">Antarctica</option>
-            <option value="AG">Antigua and Barbuda</option>
-            <option value="AR">Argentina</option>
-            <option value="AM">Armenia</option>
-            <option value="AW">Aruba</option>
-            <option value="AU">Australia</option>
-            <option value="AT">Austria</option>
-            <option value="AZ">Azerbaijan</option>
-            <option value="BS">Bahamas</option>
-            <option value="BH">Bahrain</option>
-            <option value="BD">Bangladesh</option>
-            <option value="BB">Barbados</option>
-            <option value="BY">Belarus</option>
-            <option value="BE">Belgium</option>
-            <option value="BZ">Belize</option>
-            <option value="BJ">Benin</option>
-            <option value="BM">Bermuda</option>
-            <option value="BT">Bhutan</option>
-            <option value="BO">Bolivia</option>
-            <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
-            <option value="BA">Bosnia and Herzegovina</option>
-            <option value="BW">Botswana</option>
-            <option value="BV">Bouvet Island</option>
-            <option value="BR">Brazil</option>
-            <option value="IO">British Indian Ocean Territory</option>
-            <option value="BN">Brunei Darussalam</option>
-            <option value="BG">Bulgaria</option>
-            <option value="BF">Burkina Faso</option>
-            <option value="BI">Burundi</option>
-            <option value="KH">Cambodia</option>
-            <option value="CM">Cameroon</option>
-            <option value="CA">Canada</option>
-            <option value="CV">Cape Verde</option>
-            <option value="KY">Cayman Islands</option>
-            <option value="CF">Central African Republic</option>
-            <option value="TD">Chad</option>
-            <option value="CL">Chile</option>
-            <option value="CN">China</option>
-            <option value="CX">Christmas Island</option>
-            <option value="CC">Cocos (Keeling) Islands</option>
-            <option value="CO">Colombia</option>
-            <option value="KM">Comoros</option>
-            <option value="CG">Congo</option>
-            <option value="CD">Congo, Democratic Republic of the Congo</option>
-            <option value="CK">Cook Islands</option>
-            <option value="CR">Costa Rica</option>
-            <option value="CI">Cote D'Ivoire</option>
-            <option value="HR">Croatia</option>
-            <option value="CU">Cuba</option>
-            <option value="CW">Curacao</option>
-            <option value="CY">Cyprus</option>
-            <option value="CZ">Czech Republic</option>
-            <option value="DK">Denmark</option>
-            <option value="DJ">Djibouti</option>
-            <option value="DM">Dominica</option>
-            <option value="DO">Dominican Republic</option>
-            <option value="EC">Ecuador</option>
-            <option value="EG">Egypt</option>
-            <option value="SV">El Salvador</option>
-            <option value="GQ">Equatorial Guinea</option>
-            <option value="ER">Eritrea</option>
-            <option value="EE">Estonia</option>
-            <option value="ET">Ethiopia</option>
-            <option value="FK">Falkland Islands (Malvinas)</option>
-            <option value="FO">Faroe Islands</option>
-            <option value="FJ">Fiji</option>
-            <option value="FI">Finland</option>
-            <option value="FR">France</option>
-            <option value="GF">French Guiana</option>
-            <option value="PF">French Polynesia</option>
-            <option value="TF">French Southern Territories</option>
-            <option value="GA">Gabon</option>
-            <option value="GM">Gambia</option>
-            <option value="GE">Georgia</option>
-            <option value="DE">Germany</option>
-            <option value="GH">Ghana</option>
-            <option value="GI">Gibraltar</option>
-            <option value="GR">Greece</option>
-            <option value="GL">Greenland</option>
-            <option value="GD">Grenada</option>
-            <option value="GP">Guadeloupe</option>
-            <option value="GU">Guam</option>
-            <option value="GT">Guatemala</option>
-            <option value="GG">Guernsey</option>
-            <option value="GN">Guinea</option>
-            <option value="GW">Guinea-Bissau</option>
-            <option value="GY">Guyana</option>
-            <option value="HT">Haiti</option>
-            <option value="HM">Heard Island and Mcdonald Islands</option>
-            <option value="VA">Holy See (Vatican City State)</option>
-            <option value="HN">Honduras</option>
-            <option value="HK">Hong Kong</option>
-            <option value="HU">Hungary</option>
-            <option value="IS">Iceland</option>
-            <option value="IN">India</option>
-            <option value="ID">Indonesia</option>
-            <option value="IR">Iran, Islamic Republic of</option>
-            <option value="IQ">Iraq</option>
-            <option value="IE">Ireland</option>
-            <option value="IM">Isle of Man</option>
-            <option value="IL">Israel</option>
-            <option value="IT">Italy</option>
-            <option value="JM">Jamaica</option>
-            <option value="JP">Japan</option>
-            <option value="JE">Jersey</option>
-            <option value="JO">Jordan</option>
-            <option value="KZ">Kazakhstan</option>
-            <option value="KE">Kenya</option>
-            <option value="KI">Kiribati</option>
-            <option value="KP">Korea, Democratic People's Republic of</option>
-            <option value="KR">Korea, Republic of</option>
-            <option value="XK">Kosovo</option>
-            <option value="KW">Kuwait</option>
-              <option>...</option>
-            </select>
-         <div class="form-group">
-            <button type="submit" id="btnConfirm" class="btn btn-prima btn-block mb-3 pb-sm-2 pt-sm-2 ">confirm</button>
-          </div>
-          </div>
-        <!-- <div class="d-flex align-items-center justify-content-between px-3 py-4">
-            <div >
-                <button type="button" class="btn cancel">Cancel</button>
-            </div>
-            
-        </div>
-         -->
-    </div>
-  </form>
-</div>
-  
+            <script src="js/card.js"></script>
 
 
+    </head>
+
+    <body>
+      
+      <!-- <form name="cardform" method="post" onsubmit="return checkforblank()" action="js/card.js">  -->
+
+        <div class="container mt-4 d-flex justify-content-center main">
+            <div class=" cardPayments" id="cardId">
+              
+                    <div class="px-3 pt-1 form-group">
+                        <label for="card number" class="d-flex justify-content-between">
+                            <span class="cardnumber">Card number</span>
+                            <img src="images/marstercardIcon.png" width="25" class="marstercard">
+
+                                <img src="images/americanexpressIcon.png" width="25" class="amaricanE">
+
+                                    <img src="images/visaIcon.png" width="25" class="visacard">
+
+                                    </label>
+
+                                    <input type="text" maxlength="19" name="number" id="formControlSm" class="form-control accountnumber" placeholder="1234 1234 1234 1234" onkeypress="cardspace()"   >
 
 
- 
+                                    </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-<!-- Your code goes here -->
-
-<script src="js/card.js"></script>
-<!-- ************************* -->
+                                    <div class="d-flex justify-content-between  px-3 pt-2 " id="datepicker">
+                                        <div class="form-group">
+                                            <label for="start" class="exptxt">Expiration</label>
+                                            <input type="text" maxlength="7" id="card__input" name="trip-start" class="form-control start" placeholder="MM / YY" onkeypress="addslashes()">
 
 
-<!-- MDB -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+                                        </div>
+                                        <div class="space">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cvv" class="cvvtxt">CVC</label>
+                                            <input type="number" id="cvv" maxlength="3" name="number" class="form-control cvv" placeholder="123">
+                                                <img src="images/cardIcon.png" width="20" class="cvc-ard">
+                                                </div>
+                                        </div>
+
+                                        <!-- 2 column grid layout with text inputs for the first and last names -->
+
+                                        <!-- <div class="px-3 pt-3">
+                                            <label for="card number" class="d-flex justify-content-between">
+                                                <span class="labeltxt">CARD NUMBER</span>
+
+                                                <img src="components/card/images/card.png" width="25" class="cvc-ard">
+                                            </label>
+                                            <input type="number" name="number" class="form-control inputtxt" placeholder="8881 2545 2545 2245">
+                                        </div> -->
+
+                                        <div class="px-3 pt-2 form-group">
+                                            <label for="card-number" class="d-flex justify-content-between" id="countryId"> Country</label>
+                                            <select id="card-number" class="form-control selectcountry">
+                                                <option>select country</option>
+                                                <option value="SL">Sri Lanka</option>
+                                                <option value="AX">Aland Islands</option>
+                                                <option value="AL">Albania</option>
+                                                <option value="DZ">Algeria</option>
+                                                <option value="AS">American Samoa</option>
+                                                <option value="AD">Andorra</option>
+                                                <option value="AO">Angola</option>
+                                                <option value="AI">Anguilla</option>
+                                                <option value="AQ">Antarctica</option>
+                                                <option value="AG">Antigua and Barbuda</option>
+                                                <option value="AR">Argentina</option>
+                                                <option value="AM">Armenia</option>
+                                                <option value="AW">Aruba</option>
+                                                <option value="AU">Australia</option>
+                                                <option value="AT">Austria</option>
+                                                <option value="AZ">Azerbaijan</option>
+                                                <option value="BS">Bahamas</option>
+                                                <option value="BH">Bahrain</option>
+                                                <option value="BD">Bangladesh</option>
+                                                <option value="BB">Barbados</option>
+                                                <option value="BY">Belarus</option>
+                                                <option value="BE">Belgium</option>
+                                                <option value="BZ">Belize</option>
+                                                <option value="BJ">Benin</option>
+                                                <option value="BM">Bermuda</option>
+                                                <option value="BT">Bhutan</option>
+                                                <option value="BO">Bolivia</option>
+                                                <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                                                <option value="BA">Bosnia and Herzegovina</option>
+                                                <option value="BW">Botswana</option>
+                                                <option value="BV">Bouvet Island</option>
+                                                <option value="BR">Brazil</option>
+                                                <option value="IO">British Indian Ocean Territory</option>
+                                                <option value="BN">Brunei Darussalam</option>
+                                                <option value="BG">Bulgaria</option>
+                                                <option value="BF">Burkina Faso</option>
+                                                <option value="BI">Burundi</option>
+                                                <option value="KH">Cambodia</option>
+                                                <option value="CM">Cameroon</option>
+                                                <option value="CA">Canada</option>
+                                                <option value="CV">Cape Verde</option>
+                                                <option value="KY">Cayman Islands</option>
+                                                <option value="CF">Central African Republic</option>
+                                                <option value="TD">Chad</option>
+                                                <option value="CL">Chile</option>
+                                                <option value="CN">China</option>
+                                                <option value="CX">Christmas Island</option>
+                                                <option value="CC">Cocos (Keeling) Islands</option>
+                                                <option value="CO">Colombia</option>
+                                                <option value="KM">Comoros</option>
+                                                <option value="CG">Congo</option>
+                                                <option value="CD">Congo, Democratic Republic of the Congo</option>
+                                                <option value="CK">Cook Islands</option>
+                                                <option value="CR">Costa Rica</option>
+                                                <option value="CI">Cote D'Ivoire</option>
+                                                <option value="HR">Croatia</option>
+                                                <option value="CU">Cuba</option>
+                                                <option value="CW">Curacao</option>
+                                                <option value="CY">Cyprus</option>
+                                                <option value="CZ">Czech Republic</option>
+                                                <option value="DK">Denmark</option>
+                                                <option value="DJ">Djibouti</option>
+                                                <option value="DM">Dominica</option>
+                                                <option value="DO">Dominican Republic</option>
+                                                <option value="EC">Ecuador</option>
+                                                <option value="EG">Egypt</option>
+                                                <option value="SV">El Salvador</option>
+                                                <option value="GQ">Equatorial Guinea</option>
+                                                <option value="ER">Eritrea</option>
+                                                <option value="EE">Estonia</option>
+                                                <option value="ET">Ethiopia</option>
+                                                <option value="FK">Falkland Islands (Malvinas)</option>
+                                                <option value="FO">Faroe Islands</option>
+                                                <option value="FJ">Fiji</option>
+                                                <option value="FI">Finland</option>
+                                                <option value="FR">France</option>
+                                                <option value="GF">French Guiana</option>
+                                                <option value="PF">French Polynesia</option>
+                                                <option value="TF">French Southern Territories</option>
+                                                <option value="GA">Gabon</option>
+                                                <option value="GM">Gambia</option>
+                                                <option value="GE">Georgia</option>
+                                                <option value="DE">Germany</option>
+                                                <option value="GH">Ghana</option>
+                                                <option value="GI">Gibraltar</option>
+                                                <option value="GR">Greece</option>
+                                                <option value="GL">Greenland</option>
+                                                <option value="GD">Grenada</option>
+                                                <option value="GP">Guadeloupe</option>
+                                                <option value="GU">Guam</option>
+                                                <option value="GT">Guatemala</option>
+                                                <option value="GG">Guernsey</option>
+                                                <option value="GN">Guinea</option>
+                                                <option value="GW">Guinea-Bissau</option>
+                                                <option value="GY">Guyana</option>
+                                                <option value="HT">Haiti</option>
+                                                <option value="HM">Heard Island and Mcdonald Islands</option>
+                                                <option value="VA">Holy See (Vatican City State)</option>
+                                                <option value="HN">Honduras</option>
+                                                <option value="HK">Hong Kong</option>
+                                                <option value="HU">Hungary</option>
+                                                <option value="IS">Iceland</option>
+                                                <option value="IN">India</option>
+                                                <option value="ID">Indonesia</option>
+                                                <option value="IR">Iran, Islamic Republic of</option>
+                                                <option value="IQ">Iraq</option>
+                                                <option value="IE">Ireland</option>
+                                                <option value="IM">Isle of Man</option>
+                                                <option value="IL">Israel</option>
+                                                <option value="IT">Italy</option>
+                                                <option value="JM">Jamaica</option>
+                                                <option value="JP">Japan</option>
+                                                <option value="JE">Jersey</option>
+                                                <option value="JO">Jordan</option>
+                                                <option value="KZ">Kazakhstan</option>
+                                                <option value="KE">Kenya</option>
+                                                <option value="KI">Kiribati</option>
+                                                <option value="KP">Korea, Democratic People's Republic of</option>
+                                                <option value="KR">Korea, Republic of</option>
+                                                <option value="XK">Kosovo</option>
+                                                <option value="KW">Kuwait</option>
+                                                <option>...</option>
+                                            </select>
+                                            <div class="form-group">
+                                                <button type="submit" id="btnConfirm" class="btn btn-prima btn-block mb-3 pb-sm-2 pt-sm-2 " onclick="checkforblank()">confirm</button>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="d-flex align-items-center justify-content-between px-3 py-4">
+                                            <div >
+                                                <button type="button" class="btn cancel">Cancel</button>
+                                            </div>
+
+                                        </div>
+     -->
+                                    
+                                </div>
+                             
+                            </div>
+                          <!-- </form> -->
 
 
-</body>
-</html>
+
+
+
+
+
+                            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+                            <!-- Your code goes here -->
+
+                            
+                            <!-- ************************* -->
+
+
+                            <!-- MDB -->
+                            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+
+                        </body>
+                    </html>

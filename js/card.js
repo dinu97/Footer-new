@@ -31,16 +31,18 @@ function checkforblank(){
         document.getElementById('cvv').style.borderColor="red";
         
     }
+   
+   
     if(document.getElementById('card-number').value==" "){
-        alert(errormessage);
-        return false;
-        
-    }
-    if(errormessage != ""){
         errormessage +="please select country \n";
         document.getElementById('card-number').style.borderColor="red";
         
     }
+    if(errormessage != ""){
+        alert(errormessage);
+        return false;
+    }
 
     
+
 }
