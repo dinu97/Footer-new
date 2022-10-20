@@ -24,7 +24,7 @@
                 rel="stylesheet"
             />
 
-            <script src="js/card.js"></script>
+            
 
 
     </head>
@@ -47,7 +47,7 @@
 
                                     </label>
 
-                                    <input type="text" maxlength="19" name="number" id="formControlSm" class="form-control accountnumber" placeholder="1234 1234 1234 1234" onkeypress="cardspace()"   >
+                                    <input type="text" maxlength="19" name="number" id="formControlSm" class="form-control accountnumber" placeholder="1234 1234 1234 1234" onkeypress="cardspace()">
 
 
                                     </div>
@@ -55,7 +55,7 @@
                                     <div class="d-flex justify-content-between  px-3 pt-2 " id="datepicker">
                                         <div class="form-group">
                                             <label for="start" class="exptxt">Expiration</label>
-                                            <input type="text" maxlength="7" id="card__input" name="trip-start" class="form-control start" placeholder="MM / YY" onkeypress="addslashes()">
+                                            <input type="text" maxlength="7" id="card__input" name="trip-start" class="form-control start" placeholder="MM / YY" onkeypress="addslashes()" >
 
 
                                         </div>
@@ -63,7 +63,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="cvv" class="cvvtxt">CVC</label>
-                                            <input type="number" id="cvv" maxlength="3" name="number" class="form-control cvv" placeholder="123">
+                                            <input type="text" id="cvv" maxlength="3" name="number" class="form-control cvv" placeholder="123">
                                                 <img src="images/cardIcon.png" width="20" class="cvc-ard">
                                                 </div>
                                         </div>
@@ -207,7 +207,7 @@
                                                 <option>...</option>
                                             </select>
                                             <div class="form-group">
-                                                <button type="submit" id="btnConfirm" class="btn btn-prima btn-block mb-3 pb-sm-2 pt-sm-2 " onclick="checkforblank()">confirm</button>
+                                                <button type="submit" id="btnConfirm" class="btn btn-prima btn-block mb-3 pb-sm-2 pt-sm-2 " >confirm</button>
                                             </div>
                                         </div>
                                         <!-- <div class="d-flex align-items-center justify-content-between px-3 py-4">
@@ -227,7 +227,7 @@
 
 
 
-
+                          <script src="js/card.js"></script>
 
                             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
                             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
