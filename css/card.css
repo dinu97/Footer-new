@@ -1,87 +1,116 @@
 @import url('https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold');
 
-#cardId{
+* {
+    box-sizing: border-box;
+}
+
+.card-body {
+    /* background: rgba(230, 230, 230, 0.1) !important ; */
+    border-radius: 15px;
+}
+
+/* .FormOneborder {
+    border: 0.5px dashed rgba(0, 0, 0, 0.2);
+    border-radius: 15px !important;
+} */
+
+/* .FormOneborder h3 {
+    font-size: 16px;
+    color: #30313DCC;
+    font-weight: 500;
+} */
+
+.input-cardDetails {
+    background: #FFFFFF;
+    border: 0.4px solid #E6E6E6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    font-size: 13px !important;
+}
+
+.label-color {
+    
+font-size: 1px !important;
+font-weight: 400 !important;
+line-height: 11px;
+text-transform: capitalize;
+
+/* color: rgba(118, 118, 118, 0.5)!important; */
+}
+
+.select-country {
+    background: #FFFFFF;
+    border: 0.9px solid #E6E6E6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    font-size: 13px !important;
+}
+
+/* .BF-options-styles {
+    color: #C7C5C5 !important;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+} */
+
+#card-form-main {
     background: #F7FAFC;
-border: 0.4px solid #E6E6E6;
-border-radius: 8px;
-}
-
-/* :root{
-  --first-color: #adb5bd;
-  --first-color-light: #f3f3fd;
-  --second-color: #d146ca;
-  --third-color:#fff;
-  --four-color:#000;
-  --body-font: 'Quicksand', sans-serif;
-  --normal-font-size: 1rem;
-} */
-
-/* *,::before,::after{
-  box-sizing: border-box;
-} */
-
-/* body{
-  margin: 0;
-  font-family: var(--body-font);
-  background-color: var(--second-color);
-  min-height: 100vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-} */
-.main {
-    background-color: #fffdff;
-    padding: 50px 0;
-    
-}
-.cardPayments{
-    background-color:var(--third-color);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    
+    border: 0.4px solid #E6E6E6;
     border-radius: 8px;
+    font-family: 'Gilroy SemiBold', sans-serif;
+    letter-spacing: 0;
 }
-.pay{
-    font-size: 18px;
-    color:var(--four-color);
-    font-weight: 600;
-    margin-top:5px;
+
+#CardFormMain-btn {
+    background: rgba(67, 67, 68, 0.8) !important;
+    width: 10rem;
+    height: 3rem;
+    font-size: 0.7rem;
+    border-radius: 8px !important;
 }
-.amount{
-    background-color:var(--first-color-light);
-    border-radius: 8px;
+
+
+.card-formMain-div input {
+    color: #787474 !important;
+    font-size: 12px !important;
 }
-.inner{
-    padding:8px 19px;
+
+.card-formMain-div input::placeholder {
+    color: #C7C5C5 !important;
+    font-size: 12px !important;
 }
-.dollar{
-    color:var(--first-color);
-    font-size: 20px;
-    font-weight: 500;
+
+.card-formMain-form-label {
+    margin-bottom: -0.8rem !important;
+    color: #868686 !important;
+    font-size: 12px !important;
+
+
 }
-.total{
-    font-size: 20px;
-    font-weight: 500;
-    color:#000000;
+.cardnumber-span{
+    margin-bottom: 0.2rem !important;
+    color: #868686 !important;
+    font-size: 12px !important;
+    margin-top: 12px !important;
+
 }
-.cardnumber{
-    font-size: 13px;
-    color: rgba(48, 49, 61, 0.8)!important;
-    font-weight: 500;
-    margin-top:30px;
+.cvcnumber-span{
+    margin-bottom: 0.2rem !important;
+    color: #868686 !important;
+    font-size: 12px !important;
+    margin-top: 4px;
+
 }
-.marstercard {
+.marstercard{
     position: relative;
     justify-content: space-between;
     top: 39px;
-    right: -193px;
+    right: -148px;
     margin: 14px;
 }
-
-.amaricanE {
+.amaricanE{
     position: relative;
     top: 39px;
     justify-content: space-between;
-    right: -99px;
+    right: -77px;
     margin: 14px;
 }
 .visacard {
@@ -95,144 +124,8 @@ border-radius: 8px;
 .cvc-ard {
     position: relative;
     justify-content: space-between;
-    top: -29px;
-    right: -172px;
+    top: 38px;
+    right: 15px;
     margin: -8px;
-}
-.form-control:focus{
-    box-shadow: none;
-}
-.accountnumber{
-    color:var(--four-color) !important;
-    font-weight: 400;
-    font-size: 12px;
-    padding:7px 46px -2px 2px;
-    border:2px solid var(--first-color);
-    border-radius: 7px;
-}
-.exptxt{
-    font-size: 13px;
-    color: rgba(48, 49, 61, 0.8)!important;
-    font-weight: 500;
-    margin-top: 5px;
-}
-.cvvtxt{
-    font-size: 13px;
-    color: rgba(48, 49, 61, 0.8)!important;
-    font-weight: 500;
-    margin-top: 5px;
-}
-.start{
-    padding:7px 46px -2px 2px;
-    width:120px;
-    font-size: 12px;
-    font-weight: 400;
-    border:2px solid var(--first-color);
-    border-radius: 7px;
-    
-}
-.cvv {
-    padding:6.5px ;
-    width:125px;
-    font-size: 15px;
-    border:2px solid var(--first-color);
-    border-radius: 7px;
-}
-.cancel{
-    
-        font-weight: 600;
-        font-size: 10px;
-        background-color: var(--second-color);
-        border: none;
-        width: 132px;
-        color: var(--third-color);
-        padding: 13px 10px;
-        border-radius: 12px;
-        cursor: pointer;
-   
-}
-.cancel:hover,
-.cancel:focus{
-    box-shadow: none;
-    color:var(--third-color);
-    background-color:var(--first-color);
-}
-.payment {
-    font-weight: 600;
-    font-size: 10px;
-    background-color: var(--second-color);
-    border: none;
-    max-width: 400px;
-    margin: 90px auto;
-    height: auto;
-    padding-top: 70px;
-    border-radius: 5px;
-    position: relative;
-    color: var(--third-color);
-   
-}
-.payment:hover{
-    color:var(--third-color);
-}
-#countryId{
-    font-size: 13px;
-    color: rgba(48, 49, 61, 0.8)!important;
-    font-weight: 500;
-    margin-top: 5px;
-}
-/* .form-control{
-    background: #F6F8FA;
-border: 0.4px solid rgba(230, 230, 230, 0.9)!important;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03)!important;
-border-radius: 5px!important;
-
-} */
-#datepicker{
-    padding-top: 0.5rem!important;
-    margin-bottom: -19px!important;
-}
-.accountnumber{
-    font-size: 12px;
-    
-   background: #FFFFFF;
-border: 0.4px solid #E6E6E6;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
-border-radius: 5px;
-}
-.start{
-    font-size: 12px;
-    margin: 0px 25px 2px 3px;
-   
-    background: #FFFFFF;
-border: 0.4px solid #E6E6E6;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
-border-radius: 5px;
-}
-.cvv{
-    font-size: 12px;
-    /* margin: 1px 28px 2px -1px; */
-    background: #FFFFFF;
-border: 0.4px solid #E6E6E6;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
-border-radius: 5px;
-}
-.selectcountry{
-    font-size: 12px;
-    background: #FFFFFF;
-border: 0.4px solid #E6E6E6;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
-border-radius: 5px;
-}
-.space {
-    width: 20px;
-    height: auto;
-    display: inline-block;
-  }
-
-#btnConfirm{
-    background-color: #5a6575;
-    color: #fff;
-    box-shadow: 0 4px 9px -4px #3b71ca;
-    margin-top: 25px;
-    margin-bottom: 20px;
+    margin: -1px -6px 5px
 }

@@ -43,6 +43,5 @@ function checkforblank(){
         return false;
     }
 
-    
 
 }
