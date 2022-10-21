@@ -59,7 +59,7 @@ text-transform: capitalize;
     letter-spacing: 0;
 }
 
-#CardFormMain-btn {
+#validate {
     background: rgba(67, 67, 68, 0.8) !important;
     width: 10rem;
     height: 3rem;
