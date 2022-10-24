@@ -123,7 +123,7 @@ function checkforblank(){
                 base.brand.text(base.cardType);
                 // Also set an icon
                 var icon = base._cardIcons[base.cardType] ? base._cardIcons[base.cardType] : base._cardIcons["default"];
-                fg.append("<i class='" + icon + " fa-lg payment-form-icon form-control-feedback'></i>");
+                // fg.append("<i class='" + icon + " fa-lg payment-form-icon form-control-feedback'></i>");
             } else {
                 $("[data-payment='cc-brand']").text("");
             }
