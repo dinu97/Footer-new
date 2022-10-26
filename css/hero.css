@@ -1,48 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
 
-.row{
+.row {
     display: flex;
 }
+
 /* .container{
     max-width: 90%;
     margin: 0 auto;
 } */
 
-.img-hero{
+.img-hero {
     max-width: 100%;
     height: auto;
 }
+
 /* .hero-main{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 } */
-.hero-heder{
-    font-family: 'Magra',sans-serif;
+.hero-heder {
+    font-family: 'Magra', sans-serif;
     font-style: normal;
-    color: #2C96BA;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #049EB8;
 }
-.hero-para{
-    font-family: 'Roboto',sans-serif;
+
+.hero-para {
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     color: rgba(0, 0, 0, 0.6);
 }
-.btn-order{
-    background: #2C96BA;
-border-radius: 31px;
-color: #FFFFFF;
+
+#btn-order {
+    background: #2C96BA!important;
+    border-radius: 31px;
+    color: #FFFFFF!important;
 }
-.hero-one  [contenteditable="true"]:hover {
+
+.hero-one [contenteditable="true"]:hover {
     outline: #6e9bf1 solid 1px !important;
     border-radius: 5px !important;
 }
 
-.hero-one  [contenteditable]:hover:after {
+.hero-one [contenteditable]:hover:after {
     position: absolute;
     content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiUlEQVQ4y2NgGFKgs7OTl2zNEyZMmAgEDZMmTeogWTNQUwVQcyeIDaLnz5/PQYrmssmTJ1sC6QQg7gXiFlI0l4I0Q9lOQNuLiNYMVFwCxFZQtiPQgEKSNAM1WMM0k2wzTDPQ+Q5AdjEpfs6CRRPJmqEGvAC6IAlId4NcQk58vwDih0DbMxhGDgAAx6ZVXMd4yEMAAAAASUVORK5CYII=');
     margin-left: 10px;
+}
+
+#heroId {
+    background-color: #ffffff!important;
+    border-radius: 1.0px;
+    
 }
