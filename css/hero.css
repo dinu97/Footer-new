@@ -47,9 +47,23 @@
 .hero-one:hover .removeRow {
     display: inline-block;
     color: white;
+    left: 5rem!important;
     background: #F14C4C;
-    padding: 3px 7px;
-    font-size: 0.9rem;
+    padding: 1px 4px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.newRow {
+    display: none;
+}
+
+.hero-one:hover .newRow {
+    display: inline-block;
+    color: white;
+    background: #32f86e;
+    padding: 1px 4px;
+    font-size: 0.6rem;
     text-transform: uppercase;
     cursor: pointer;
 }

@@ -6,3 +6,9 @@ for (i = 0; i < closebtns.length; i++) {
     this.parentElement.style.display = 'none';
   });
 }
+
+var li = document.createElement("li");
+li.innerHTML = "Item";
+document.getElementById("myList").appendChild(li);
+
+
