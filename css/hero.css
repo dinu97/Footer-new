@@ -42,6 +42,7 @@
 
 .removeRow {
     display: none;
+    float: right;
 }
 
 .hero-one:hover .removeRow {
@@ -54,20 +55,6 @@
     text-transform: uppercase;
     cursor: pointer;
 }
-.newRow {
-    display: none;
-}
-
-.hero-one:hover .newRow {
-    display: inline-block;
-    color: white;
-    background: #32f86e;
-    padding: 1px 4px;
-    font-size: 0.6rem;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
 
 
 #btn-order {
