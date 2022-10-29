@@ -45,7 +45,7 @@
     float: right;
 }
 
-.hero-one:hover .removeRow {
+.hero-one [contenteditable]:hover .removeRow {
     display: inline-block;
     color: white;
     left: 5rem!important;
@@ -55,6 +55,16 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+/* .hero-one :hover .removeRow {
+    display: inline-block;
+    color: white;
+    left: 5rem!important;
+    background: #F14C4C;
+    padding: 1px 4px;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+} */
 
 
 #btn-order {
