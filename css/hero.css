@@ -75,7 +75,7 @@
 
 .hero-one [contenteditable="true"]:hover {
     outline: #6e9bf1 solid 1px !important;
-    border-radius: 5px !important;
+    /* border-radius: 5px !important; */
 }
 
 .hero-one [contenteditable]:hover:after {
