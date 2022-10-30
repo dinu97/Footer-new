@@ -55,7 +55,7 @@
     text-transform: uppercase;
     cursor: pointer;
 }
-/* .hero-one :hover .removeRow {
+.hero-one [contenteditable=fales] :hover .removeRow {
     display: inline-block;
     color: white;
     left: 5rem!important;
@@ -64,7 +64,7 @@
     font-size: 0.6rem;
     text-transform: uppercase;
     cursor: pointer;
-} */
+}
 
 
 #btn-order {
