@@ -35,29 +35,31 @@
  <div class="container hero-one" id="heroId">
 	<div class="row py-4 py-lg-6">
 		<div class="col-lg-4 order-lg-2 d-flex align-items-center  justify-content-center justify-content-lg-start ms-lg-n6">
-			<li><div style="z-index:1" class="lc-block col-12 col-lg-10 mb-n3 mb-lg-10" contenteditable=fales >
-				<span class="close"><a class ="removeRow" href="#"><i class="fas fa-times"></i></a></span><img class="img-hero hero-main" src="images/heroOne-image.png " alt="download video">
-			</div> </li><!-- /lc-block -->
+			<div style="z-index:1" class="lc-block col-12 col-lg-10 mb-n3 mb-lg-10 editableBox" contenteditable=fales >
+				<span class="close" contenteditable="false"><a class ="removeRow" href="#"><i class="fas fa-times"></i></a></span><img class="img-hero hero-main" src="images/heroOne-image.png " alt="download video">
+			</div> <!-- /lc-block -->
 		</div><!-- /col -->
 		<div class="col-lg-7 ms-lg-5 text-center text-md-center text-lg-start bg-white px-lg-5 p-4">
 			<div class="col-lg-10 ms-lg-5">
 				<div class="lc-block mb-4 headerHero" >
-					<li><div contenteditable=true>
-						<span class="close"><a class ="removeRow" href="#"><i class="fas fa-times"></i></a>
+					<div  class="editableBox" contenteditable=true>
+						<span class="close" contenteditable="false"><a class ="removeRow" href="#"><i class="fas fa-times"></i></a>
 						</span><h1 class="hero-heder rfs-30">All-in-one feedback</h1>
-					</div></li>
+					</div>
 					
 				</div>
 				<div class="lc-block mb-5">
-					<li><div contenteditable=true>
-						<span class="close"><a class ="removeRow" href="#"><i class="fas fa-times"></i></a></span><p class="hero-para"> Prioritise, manage and track your customer feedback with one tool.
+					<div  class="editableBox" contenteditable=true>
+						<span class="close" contenteditable="false"><a class ="removeRow" href="#"><i class="fas fa-times"></i></a></span><p class="hero-para"> Prioritise, manage and track your customer feedback with one tool.
 							Collect all data and make smarter decisions in one place.</p>
-					</div></li>
+					</div>
 				</div>
-				<li><div class="lc-block-hero mb-5" contenteditable=true>
-					<span class="close"><a class ="removeRow" href="#"><i class="fas fa-times"></i></a></span><a id="btn-order" class="btn btn-primary btn-rounded btn-lg" href="#" role="button"
+				<div class="editableBox" contenteditable=true >
+				<div class="lc-block-hero mb-5" >
+					<span class="close" contenteditable="false"><a class ="removeRow" href="#"><i class="fas fa-times"></i></a></span><a id="btn-order" class="btn btn-primary btn-rounded btn-lg" href="#" role="button"
 				   >Order Now &nbsp; </a>
-			</div></li>
+			</div>
+		</div>
 			</div>
 		</div><!-- /col -->
 

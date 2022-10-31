@@ -45,25 +45,40 @@
     float: right;
 }
 
-.hero-one [contenteditable]:hover .removeRow {
-    display: inline-block;
-    color: white;
-    left: 5rem!important;
-    background: #F14C4C;
-    padding: 1px 4px;
-    font-size: 0.6rem;
-    text-transform: uppercase;
-    cursor: pointer;
+[contenteditable="true"]:hover {
+    outline: none !important;
+    /*border-radius: 5px !important;*/
 }
-.hero-one [contenteditable=fales] :hover .removeRow {
+
+.editableBox  {
+    position: relative;
+    margin:0.2rem 0.2rem 0.2rem 0.2rem ;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+
+}
+
+.editableBox:hover {
+    outline: #0043c1 solid 1px !important;
+    /*border-radius: 5px !important;*/
+}
+
+
+
+.editableBox:hover .removeRow {
     display: inline-block;
+    position: absolute;
+    float: right !important;
     color: white;
-    left: 5rem!important;
+    
     background: #F14C4C;
     padding: 1px 4px;
+    margin: 0.15rem 0.15rem 0.15rem 0.15rem;
     font-size: 0.6rem;
     text-transform: uppercase;
     cursor: pointer;
+    z-index: 999;
+    right: 0;
+
 }
 
 
