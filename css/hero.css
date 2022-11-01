@@ -56,12 +56,12 @@
     padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 
 }
-.hero-one{
+.sectionHover{
     position: relative;
     margin:0.2rem 0.2rem 0.2rem 0.2rem ;
     padding: 0.2rem 0.2rem 0.2rem 0.2rem;
 }
-.hero-one:hover{
+.sectionHover:hover{
     outline: #0043c1 solid 1px !important;
 }
 
@@ -95,7 +95,7 @@
     margin: 0.2rem;
 }
 
-.hero-one:hover .sectionEditableBox{
+.sectionHover:hover .sectionEditableBox{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,12 +134,12 @@
     color: #FFFFFF !important;
 }
 
-.hero-one [contenteditable="true"]:hover {
+.sectionHover [contenteditable="true"]:hover {
     outline: #6e9bf1 solid 1px !important;
     /* border-radius: 5px !important; */
 }
 
-.hero-one [contenteditable]:hover:after {
+.sectionHover [contenteditable]:hover:after {
     position: absolute;
     /* content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAiUlEQVQ4y2NgGFKgs7OTl2zNEyZMmAgEDZMmTeogWTNQUwVQcyeIDaLnz5/PQYrmssmTJ1sC6QQg7gXiFlI0l4I0Q9lOQNuLiNYMVFwCxFZQtiPQgEKSNAM1WMM0k2wzTDPQ+Q5AdjEpfs6CRRPJmqEGvAC6IAlId4NcQk58vwDih0DbMxhGDgAAx6ZVXMd4yEMAAAAASUVORK5CYII='); */
     margin-left: 10px;
