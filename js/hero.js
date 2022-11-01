@@ -12,3 +12,7 @@ li.innerHTML = "Item";
 document.getElementById("myList").appendChild(li);
 
 
+function remove() {
+  var element = document.getElementById("heroId");
+  element.remove();
+}
