@@ -55,7 +55,7 @@
     }
     .modal-image
     {
-        color: #2E2E2E!important;
+        color: #1A2859!important;
         /* width: 281px;
         height: -50px;
         left: 816px;
@@ -72,7 +72,7 @@ border-radius: 5px;
        border: none;
         border-radius: 6px;
         margin-top: 18%;
-        outline: rgba(0, 0, 0, 0.5) none 0px;
+        /* outline: rgba(0, 0, 0, 0.5) none 0px; */
     
     }
     input[type=submit].modal-submit-btn{
@@ -135,6 +135,7 @@ border-radius: 5px;
     top: 13px;
     right: -37px;
     margin: -17px -6px 5px;
+   
 }
 .elementadd{
     width: 250px;
