@@ -1,5 +1,6 @@
 *.box-sizing : border-box;
-.modal{
+
+.modal {
     display: none;
     position: fixed;
     z-index: 9999;
@@ -9,12 +10,12 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     font-family: sans-serif;
-    }
-    
-    .modal-close{
+}
+
+.modal-close {
     font-size: 20px;
     float: right;
     bottom: -50px;
@@ -26,21 +27,23 @@
     transition: all .2s;
     cursor: pointer;
     width: auto;
-    }
-    .modal-close:hover{
+}
+
+.modal-close:hover {
     color: #3b3b3b;
-    }
-    
-   
-    .nav-elements{
+}
+
+
+.nav-elements {
     padding: 20px 30px;
     color: rgba(199, 49, 49, 0.5);
     width: auto;
     /* background-color: #3b3b3b; */
-    margin:-15px;
-    }
-    input[type=text].modal-input{
-    color: #2E2E2E!important;
+    margin: -15px;
+}
+
+input[type=text].modal-input {
+    color: #2E2E2E !important;
     width: 120px;
     height: 50px;
     left: 817px;
@@ -52,92 +55,95 @@
     margin-top: 30px;
     outline: rgba(0, 0, 0, 0.5) none 0px;
     padding: 5px;
-    }
-    .modal-image
-    {
-        color: #1A2859!important;
-        /* width: 281px;
+}
+
+.modal-image {
+    color: #2E2E2E !important;
+    /* width: 281px;
         height: -50px;
         left: 816px;
         top: 38px; */
-        width: 281px;
-        height: 45px;
-        left: 632px;
-        top: 38px;
+    width: 281px;
+    height: 45px;
+    left: 632px;
+    top: 38px;
 
-background: #D9D9D9;
-border-radius: 5px;
-        text-align: center;
-        background: #D9D9D9;
-       border: none;
-        border-radius: 6px;
-        margin-top: 18%;
-        /* outline: rgba(0, 0, 0, 0.5) none 0px; */
-    
-    }
-    input[type=submit].modal-submit-btn{
-        width: 150px;
-        height: 50px;
-        left: 630px;
-        top: 407px;
+    background: #D9D9D9;
+    border-radius: 5px;
+    text-align: center;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 6px;
+    margin-top: 18%;
+    outline: rgba(0, 0, 0, 0.5) none 0px;
+
+}
+
+input[type=submit].modal-submit-btn {
+    width: 150px;
+    height: 50px;
+    left: 630px;
+    top: 407px;
     font-size: 14px;
     background-color: #1A2859;
-    color:#ffffff;
-    margin-top:30px;
-    border:none;
+    color: #ffffff;
+    margin-top: 30px;
+    border: none;
     cursor: pointer;
     border-radius: 3px;
-    
-    
-    }
-    @media screen and (max-width: 27em) {
-    input[type=text].modal-input{
-    width:90%;
-    margin-bottom: 0px;
-    }
-    input[type=submit].modal-submit-btn{
-    width:90%;
-    }
-    
+
+
+}
+
+@media screen and (max-width: 27em) {
+    input[type=text].modal-input {
+        width: 90%;
+        margin-bottom: 0px;
     }
 
-    
-    .inner-modal{
-        
-        width: 350px;
-        height: 250px;
-        left: 20px;
-        top: 192px;
-        background: #FFFFFF;
-        border: 1px solid #EEEEEE;
-        /* background: #FFFFFF; */
-        /* border: 1px solid #EEEEEE; */
-        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-       
-        
-        padding: 10px -2px 4px -50px;
-        overflow: hidden;
-        position: relative;
-        box-sizing: border-box;
-        
-        margin: auto;
-        border-radius: 20px;
-        border: 0px solid #fcfcfc;
-       
-        
-        
+    input[type=submit].modal-submit-btn {
+        width: 90%;
     }
 
-    .cvc{
-        position: relative;
+}
+
+
+.inner-modal {
+
+    width: 350px;
+    height: 250px;
+    left: 20px;
+    top: 192px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    /* background: #FFFFFF; */
+    /* border: 1px solid #EEEEEE; */
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+
+
+    padding: 10px -2px 4px -50px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+
+    margin: auto;
+    border-radius: 20px;
+    border: 0px solid #fcfcfc;
+
+
+
+}
+
+.cvc {
+    position: relative;
     justify-content: space-between;
     top: 97px;
     top: 13px;
     right: -37px;
     margin: -17px -6px 5px;
-   
 }
-.elementadd{
+
+.elementadd {
     width: 250px;
     height: 0px;
     /* left: 695px; */

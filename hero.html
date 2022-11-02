@@ -24,6 +24,7 @@
     />
 
     <link rel="stylesheet" href="css/hero.css" class="stylesheet">
+	<link rel="stylesheet" href="css/model.css" class="stylesheet">
 
 
   </head>
@@ -35,7 +36,7 @@
  <div class="container sectionHover" id="heroId">
 	<div class="sectionEditableBox ">
         <!-- <a  href="#" onclick=""><i class="fas fa-plus-square"></i></a> -->
-		<a  href="#" onclick="location.href = 'model.html';"><i class="fas fa-plus-square"></i></a>
+		<a  href="#" onclick="showFunction()"><i class="fas fa-plus-square"></i></a>
 		<a  href="#" onclick="remove(this)"><i class="fas fa-trash"></i></a>
 		<a  href="#" id="duplicateButton" onclick=""><i class="fas fa-clone"></i></a>
 		<a  href="#" onclick=""><i class="fas fa-angle-up"></i></a>
@@ -72,6 +73,43 @@
 		</div><!-- /col -->
 
 	</div>
+
+	<!-- partial:index.partial.html -->
+
+<div id="popup-modal" class="modal">
+<div class="inner-modal animated bounce">
+<a class="modal-close" onclick="closeFunction()"><i class="fa-solid fa-circle-xmark"></i></a>
+<div class="nav-elements">
+  <div class="elementadd ">
+    <h6>ADD NEW ELEMENT</h6>
+  </div>
+    <div>
+      <label>
+        <img src="images/images.svg" width="20" class="cvc">
+      </label>
+      
+      <input type="fa-border" class="modal-image justify-content-center" placeholder="LOGO" > 
+    </div>
+    <form>
+
+    <div class="row mb-4 justify-content-center">
+        
+        <div class="col-6 col-md-5  mb-2 pb-2">
+            
+                <input type="text" class="modal-input" placeholder="Nav Link"/>           
+             
+        </div>
+        <div class="col-6 col-md-6  mb-2 pb-2">
+            
+                <input type="submit" class="modal-submit-btn" value="Nav Button"/>
+            
+        </div>
+    </div>
+
+
+</form>
+</div>
+</div>
 </div>
 
 <!-- hero section end -->
