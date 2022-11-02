@@ -1,3 +1,4 @@
+*.box-sizing : border-box;
 .modal{
     display: none;
     position: fixed;
@@ -16,10 +17,12 @@
     .modal-close{
     font-size: 20px;
     float: right;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 25px;
-    margin-top: -10px;
+    bottom: -50px;
+    font-weight: 400;
+    color: #c7c2c2;
+    font-size: 30px;
+    margin-top: -1px;
+    margin-right: 10px;
     transition: all .2s;
     cursor: pointer;
     width: auto;
@@ -27,25 +30,9 @@
     .modal-close:hover{
     color: #3b3b3b;
     }
-    .modal-img img{
-    width: 100%;
-    }
-    .modal-text{
-    text-align: center;
-    color:#ffffff;
-    }
-    .modal-text h2{
-    font-size: 24px;
-    font-weight: 600;
-    font-family: Lato;
-    }
-    .modal-text p{
-    font-size: 17px;
-    margin-top: -15px;
-    margin-bottom: 50px;
-    font-family: Lato;
-    }
-    .modal-footer{
+    
+   
+    .nav-elements{
     padding: 20px 30px;
     color: rgba(199, 49, 49, 0.5);
     width: auto;
@@ -53,26 +40,55 @@
     margin:-15px;
     }
     input[type=text].modal-input{
-    color: rgba(0, 0, 0, 0.5);
-    
-    background: rgba(194, 191, 191, 0.5);
-    border: none;
+    color: #2E2E2E!important;
+    width: 120px;
+    height: 50px;
+    left: 817px;
+    top: 407px;
+    text-align: center;
+    background: rgba(255, 255, 255);
+    border: 1px solid #699BF7;
     border-radius: 3px;
-    float: right;
+    margin-top: 30px;
     outline: rgba(0, 0, 0, 0.5) none 0px;
-    padding: 15px;
+    padding: 5px;
+    }
+    .modal-image
+    {
+        color: #2E2E2E!important;
+        /* width: 281px;
+        height: -50px;
+        left: 816px;
+        top: 38px; */
+        width: 281px;
+        height: 45px;
+        left: 632px;
+        top: 38px;
+
+background: #D9D9D9;
+border-radius: 5px;
+        text-align: center;
+        background: #D9D9D9;
+       border: none;
+        border-radius: 6px;
+        margin-top: 18%;
+        outline: rgba(0, 0, 0, 0.5) none 0px;
+    
     }
     input[type=submit].modal-submit-btn{
-    padding: 14px;
+        width: 150px;
+        height: 50px;
+        left: 630px;
+        top: 407px;
     font-size: 14px;
-    background-color: #3bb4f5;
+    background-color: #1A2859;
     color:#ffffff;
-    float: -15rem;
-    
+    margin-top:30px;
     border:none;
     cursor: pointer;
     border-radius: 3px;
-    margin-bottom: -13px;
+    
+    
     }
     @media screen and (max-width: 27em) {
     input[type=text].modal-input{
@@ -82,44 +98,55 @@
     input[type=submit].modal-submit-btn{
     width:90%;
     }
-    .modal-text p{
-    font-size: 15px;
-    }
+    
     }
 
-    .modal-content {
-       
-        
-        flex-direction: column;
-       
-        pointer-events: auto;
-       
-        background-clip: padding-box;
-        border: 1px solid rgba(0,0,0,.2);
-        border-radius: 0.5rem;
-        outline: 0;
-    }
+    
     .inner-modal{
         
-        width: 42px;
-        height: 200px;
-        left: 5px;
-        top: 19px;
+        width: 350px;
+        height: 250px;
+        left: 20px;
+        top: 192px;
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
         /* background: #FFFFFF; */
         /* border: 1px solid #EEEEEE; */
-        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-        border-radius: 10px;
-        background-color: #92c927;
-        width: 100%;
-        padding: 15px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+       
+        
+        padding: 10px -2px 4px -50px;
         overflow: hidden;
         position: relative;
         box-sizing: border-box;
-        max-width: 650px;
+        
         margin: auto;
-        border-radius: 0px;
+        border-radius: 20px;
         border: 0px solid #fcfcfc;
-        padding: 15px;
+       
         
         
     }
+
+    .cvc{
+        position: relative;
+    justify-content: space-between;
+    top: 97px;
+    top: 13px;
+    right: -37px;
+    margin: -17px -6px 5px;
+}
+.elementadd{
+    width: 250px;
+    height: 0px;
+    /* left: 695px; */
+    margin-top: 33px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #6E7583;
+}
+    
