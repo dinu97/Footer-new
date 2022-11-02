@@ -10,7 +10,7 @@ modal.style.display = "none";
 window.onload = function() {
 setTimeout(function() {
 modal.style.display = 'block';
-}, 3000);
+}, 0);
 }
 window.onclick = function(event) {
 if (event.target == modal) {
