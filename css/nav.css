@@ -1,0 +1,485 @@
+@import url('https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold');
+
+body {
+    background-color: #f5f5f5;
+}
+
+.nav-one {
+    box-shadow: none !important;
+    padding: 1.5625rem !important;
+    background-color: #ffffff !important;
+    position: relative;
+
+}
+
+.nav-one li {
+    list-style: none !important;
+}
+
+.nav-one-item {
+    padding: 0 1.35rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4c2222;
+}
+
+.nav-one-link {
+    color: #000000 !important;
+    font-family: 'Gilroy SemiBold', sans-serif;
+    padding-right: 1.4rem !important;
+}
+
+.dropdown-toggle:after {
+    display: none !important;
+}
+
+
+#btnOne-1 {
+    padding: 1.1rem 1.9rem 1.1rem 1.9rem !important;
+    font-size: 1rem !important;
+    border-radius: 0.55rem !important;
+    line-height: 19px !important;
+    text-align: center !important;
+    color: #FFFFFF !important;
+    background-color: #212D63 !important;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
+}
+
+#btnOne-2 {
+
+    font-size: 2.5rem !important;
+    border-radius: 100% !important;
+    line-height: 19px !important;
+    text-align: center !important;
+    color: #FFFFFF !important;
+    background-color: #212D63 !important;
+    font-family: 'Gilroy SemiBold', sans-serif !important;
+}
+
+.removeRow {
+    display: none;
+    float: right;
+}
+
+[contenteditable="true"]:hover {
+    outline: none !important;
+    /*border-radius: 5px !important;*/
+}
+
+.editableBox {
+    position: relative;
+    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+
+}
+
+.editableBox:hover {
+    outline: #0043c1 solid 1px !important;
+    /*border-radius: 5px !important;*/
+}
+
+
+.editableBox:hover .removeRow {
+    display: inline-block;
+    position: absolute;
+    float: right !important;
+    color: white;
+    background: #F14C4C;
+    padding: 1px 4px;
+    margin: 0.15rem 0.15rem 0.15rem 0.15rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 999;
+    right: 0;
+
+}
+
+.sectionEditableBox {
+    display: none;
+    float: right;
+}
+
+.section-componentBox {
+    position: relative;
+    margin: 0.2rem 0.2rem 0.2rem 0.2rem;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.section-componentBox:hover {
+    outline: #dadbdc solid 0.1rem !important;
+    /* border-radius: 5px !important; */
+}
+
+.section-componentBox:hover .sectionEditableBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    right: 1rem;
+    position: absolute;
+    width: 12rem;
+    height: 2.25rem;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    background: rgba(217, 217, 217, 0.65);
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.sectionEditableBox i {
+    color: #455A64;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+
+.headerComponentBox {
+    display: none;
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    padding: 0.2rem;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    z-index: 1000;
+    right: 13.5rem;
+    top: 1.2rem;
+    cursor: pointer;
+}
+
+.headerComponentBox i {
+    position: absolute;
+    color: #455A64;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    top: 0;
+    right: 0;
+}
+
+.headerComponentBox h4 {
+    color: #6E7583;
+    font-size: 10px;
+    text-align: center;
+}
+
+.elementEditableBox {
+    position: absolute;
+    z-index: 1000;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 260px;
+    height: 380px;
+    cursor: pointer;
+    padding: 0.2rem;
+    top: 7rem;
+    right: 30rem;
+}
+
+.elementEditableBox i {
+    position: absolute;
+    color: #455A64;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    top: 0;
+    right: 0;
+}
+
+.elementEditableBox h4 {
+    color: #6E7583;
+    font-size: 10px;
+    text-align: center;
+}
+
+.elementEditableBox small {
+    color: #6E7583;
+    font-size: 0.8rem;
+    font-style: italic;
+
+}
+
+.elementEditableBox input[type=url] {
+    background: #D9D9D9;
+    border-radius: 4px;
+    width: 100%;
+    height: 30px;
+    border: none !important;
+}
+
+.elementEditableBox input[type=url]::placeholder {
+    color: #a0a0a0;
+    font-size: 0.75rem;
+}
+
+.elementEditableBox select {
+    border: none !important;
+    background: #D9D9D9;
+    border-radius: 4px;
+    width: 94% !important;
+    height: 30px;
+}
+
+
+.elementEditable-colorBox {
+    background: #CECECE;
+    border-radius: 5px;
+    text-align: center;
+    width: 30px;
+    height: 28px;
+    padding: 0.17rem 0.2rem 0.2rem 0.2rem;
+}
+
+.elementEditable-colorBox input[type=color] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none !important;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    background: none !important;
+    cursor: pointer;
+}
+
+#fontColor::-webkit-color-swatch {
+    border-radius: 50%;
+    border: none !important;
+}
+
+.elementEditable-colorBox-fill {
+    background: #CECECE;
+    border-radius: 5px;
+    text-align: center;
+    width: 75px;
+    height: 28px;
+    padding: 0.17rem 0.2rem 0.2rem 0.2rem;
+    margin-left: 1rem;
+}
+
+.elementEditable-colorBox-fill input[type=number] {
+    width: 100%;
+    height: 22px;
+}
+
+.elementEditable-colorBox-fill input[type=number]::placeholder {
+    color: #6E7583;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+
+/* Add new element button styles */
+
+#addNewElement-btn-one {
+    box-shadow: none !important;
+    background: #D9D9D9;
+    border-radius: 5px;
+    color: #455A64;
+}
+
+#addNewElement-btn-one::before {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    content: "\f03e";
+    font-weight: 900;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+#addNewElement-btn-one:hover {
+    background: #c5c4c4;
+    color: #455A64;
+}
+
+#addNewElement-btn-two {
+    box-shadow: none !important;
+    background: #1A2859;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+#addNewElement-btn-two:hover {
+    background: #223471;
+    color: #FFFFFF;
+}
+
+#addNewElement-btn-three {
+    box-shadow: none !important;
+    background: rgba(255, 253, 253, 0);
+    border: 1px solid #699BF7;
+    color: #455A64;
+}
+
+#addNewElement-btn-three:hover {
+    background: #f3f1f1;
+    color: #455A64;
+}
+
+#elementEditableBox-btn-one {
+    box-shadow: none !important;
+    background: #FFFFFF;
+    border: 1px solid rgba(8, 62, 255, 0.8);
+    border-radius: 5px;
+    color: #699BF7;
+    font-size: 0.65rem;
+}
+
+#elementEditableBox-btn-one:hover {
+    background: #699BF7FF;
+    color: #ffffff;
+    border: 1px solid rgba(8, 62, 255, 0);
+}
+
+#elementEditableBox-btn-two {
+    box-shadow: none !important;
+    font-size: 0.65rem;
+    border-radius: 5px;
+    background: rgba(8, 62, 255, 0.8);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+#elementEditableBox-btn-two:hover {
+    background: #699BF7FF;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+/* Image upload CSS */
+
+.ImageUploadBox {
+    display: none;
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    padding: 0.2rem;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    z-index: 1000;
+    left: 5rem;
+    top: 7.5rem;
+    cursor: pointer;
+}
+
+.ImageUploadBox i {
+    position: absolute;
+    color: #455A64;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    top: 0;
+    right: 0;
+}
+
+.ImageUploadBox h3 {
+    color: #6E7583;
+    font-size: 15px;
+    text-align: center;
+}
+
+.ImageUploadBox-imageBox {
+    width: 185px;
+    height: 175px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+    margin-left: 1.8rem !important;
+    margin-top: 1rem !important;
+}
+
+
+.editable-image {
+    width: 185px;
+    height: 175px;
+
+}
+
+.ImageUploadBox small {
+    color: #6E7583;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.ImageUploadBox-colorBox-fill {
+    background: #CECECE;
+    border-radius: 5px;
+    text-align: center;
+    width: 75px;
+    height: 28px;
+    padding: 0.17rem 0.2rem 0.2rem 0.2rem;
+    margin-left: 2.5rem;
+}
+
+.ImageUploadBox-colorBox-fill input[type=number] {
+    width: 100%;
+    height: 22px;
+}
+
+.ImageUploadBox-colorBox-fill input[type=number]::placeholder {
+    color: #6E7583;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+#ImageUploadBox-btn-one {
+    box-shadow: none !important;
+    background: #FFFFFF;
+    border: 1px solid rgba(8, 62, 255, 0.8);
+    border-radius: 5px;
+    color: #699BF7;
+    font-size: 0.65rem;
+}
+
+#ImageUploadBox-btn-one:hover {
+    background: #699BF7FF;
+    color: #ffffff;
+    border: 1px solid rgba(8, 62, 255, 0);
+}
+
+#ImageUploadBox-btn-two {
+    box-shadow: none !important;
+    font-size: 0.65rem;
+    border-radius: 5px;
+    background: rgba(8, 62, 255, 0.8);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+#ImageUploadBox-btn-two:hover {
+    background: #699BF7FF;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+#ImageUploadBox-btn-three {
+    box-shadow: none !important;
+    background: rgba(8, 62, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 0.65rem;
+}
+
+#ImageUploadBox-btn-three::before {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    content: "\e09a";
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+#ImageUploadBox-btn-three:hover {
+    background: #699BF7FF;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+

@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <link rel="stylesheet" href="css/nav.css" class="stylesheet">
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    
+
+  </head>
+
+<body>
+  <!-- <i class="bi bi-credit-card">/i> -->
+
+<!-- Your code goes here -->
+
+<!-- Navbar -->
+<nav id="header-one-id" class="navbar navbar-expand-lg navbar-light bg-light nav-one headerOne-content-edit section-componentBox">
+    
+    <div class="sectionEditableBox">
+     <a  href="#" onclick="showFunction()"><i class="fas fa-plus-square"></i></a>
+      <a href="#" onclick=""><i class="fas fa-trash"></i></a>
+      <a href="#" onclick=""><i class="fas fa-clone"></i></a>
+      <a href="#" onclick=""><i class="fas fa-angle-up"></i></a>
+      <a href="#" onclick=""><i class="fas fa-angle-down"></i></a>
+    </div>
+    
+    <div id="headerComponentBox-Id" class="headerComponentBox">
+    <a class="modal-close" onclick="closeFunction()"> <i class="far fa-times-circle"></i></a>
+     <h4 class="mt-2">ADD NEW ELEMENT</h4>
+            <div class="d-grid gap-2 col-6 mx-auto mt-3 mb-3">
+               <button id="addNewElement-btn-one" class="btn btn-primary" type="button">LOGO</button>
+            </div>
+            <div class="d-grid gap-2 d-md-block ms-2">
+                <button onclick="myFunction()" id="addNewElement-btn-two" class="btn btn-primary" type="button">Nav Button</button>
+                <button id="addNewElement-btn-three" class="btn btn-primary" type="button">Nav Link</button>
+            </div>
+    </div>
+    
+    <div id="ImageUpload-Id" class="ImageUploadBox">
+    <a class="modal-close" onclick="closeFunction1()"><i class="far fa-times-circle"></i></a>
+    <h3 class="mt-4">EDIT IMAGE</h3>
+    <div class="row">
+         <div class="col-md-6 ms-5 ">
+         <div class="ImageUploadBox-imageBox">
+         <img class="editable-image" src="https://footers-html.netlify.app/images/heroOne-image.png" alt="Image">
+         </div>
+         </div>
+         <div class="row ms-5 mt-2">
+            <div class="d-flex gap-2 d-md-block ps-5">
+                <button id="ImageUploadBox-btn-one" class="btn btn-primary btn-sm" type="button">CANCEL</button>
+                <button id="ImageUploadBox-btn-two" class="btn btn-primary btn-sm" type="button">&nbsp;&nbsp;SAVE&nbsp;&nbsp;</button>   
+            </div>
+            </div>
+
+<div class="row">
+  <div class="col-sm-5 col-md-6 ps-5 mt-3">
+  <small>Upload an Image</small>
+   <button id="ImageUploadBox-btn-three" class="btn btn-primary btn-sm mt-3" type="button">Upload</button>   
+  </div>
+  <div class="col-sm-7 offset-sm-2 col-md-6 offset-md-0">
+    <div class="row justify-content-start mt-3">
+                <div class="col-9">
+                <small>Background Color</small>
+                </div>
+                <div class="col-2">
+               <div class="elementEditable-colorBox"> <input type="color" id="fontColor" name="fontColor" value="#FFFFFF"></div>
+               </div>
+             </div>
+              <div class="row justify-content-start mt-3">
+                <div class="col-3 ">
+                <small>Fill</small>
+                </div>
+                <div class="col-9">
+               <div class="ImageUploadBox-colorBox-fill"> <input type="number" id="typeNumber" class="form-control" placeholder="100%" /></div>
+               </div>
+             </div>
+  </div>
+</div>
+            
+    </div>
+    </div>
+    
+    <!-- Container wrapper -->
+    
+    <div class="container">
+        <!-- Navbar brand -->
+        <div class="editableBox" id="logoId">
+         <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+         <a onclick="showFunction1()"  class="navbar-brand  ms-3" href="#">
+            <i class="fas fa-dice-d6 fa-2x"></i>
+        </a>
+        </div>
+        <!-- Toggle button -->
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample"
+                aria-controls="navbarButtonsExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0" id="navbar-navId">
+                <li id="hOne-nav-li-item-one" class="nav-item nav-one-item dropdown editableBox">
+
+                    <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+                    <a
+                            class="nav-link nav-one-link active dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                            contenteditable="true"
+                    >
+                        Templates &nbsp; <i class="fas fa-angle-down"></i>
+                    </a>
+
+
+                    <!-- Dropdown menu -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">Action</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider"/>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-one-item editableBox">
+                    <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+                    <a class="nav-link nav-one-link active"  id="blogId" aria-current="page" href="#"
+                       contenteditable="true">Blog</a>
+
+                </li>
+                <li class="nav-item nav-one-item editableBox">
+                    <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+                    <a class="nav-link nav-one-link active" href="#" contenteditable="true">Pricing</a>
+                </li>
+                <!-- Navbar dropdown -->
+
+            </ul>
+            <!-- Left links -->
+
+            <!-- Left links -->
+
+            <div class="d-flex align-items-center">
+                <div class="editableBox" contenteditable="true">
+                    <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+                    <button id="btnOne-1" type="button" class="btn btn-primary me-3 ms-3" >
+                        Start Free
+                    </button>
+                </div>
+                <div class="editableBox" contenteditable="true">
+                    <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+                    <button id="btnOne-2" type="button" class="btn btn-primary btn-lg btn-floating ms-3 me-3"
+                            ><i class="fas fa-user-circle"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+<!-- ************************* -->
+
+
+<!-- MDB -->
+<script src="js/nav.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+
+</body>
+</html>
