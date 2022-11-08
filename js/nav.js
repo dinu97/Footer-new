@@ -54,24 +54,24 @@ function AddNewEliment() {
 // ListItem
 let BtnAddListElement = document.querySelector(".navList-add");
 let DivListContainer = document.getElementById("navbar-navId");
-
 BtnAddListElement.addEventListener("click", AddNewListEliment);
 
 function AddNewListEliment() {
-  let contenteditableDiv = document.createElement("div");
+  let contenteditableList = document.createElement("li");
+  
+  contenteditableList.className = "editableBox";
+  contenteditableList.contentEditable = true;
 
-  contenteditableDiv.className = "editableBox";
-  contenteditableDiv.contentEditable = true;
-
-  contenteditableDiv.innerHTML =`<span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+  contenteditableList.innerHTML =`<span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <a class="nav-link nav-one-link active"  id="blogId" aria-current="page" href="#"
      contenteditable="true">Nav Link</a>
 `;
   // let listName = document.createTextNode("Nav Link");
   console.log("add");
+  console.log("close");
   // newListDiv.classList.add("add-newListElement");
 
-  DivListContainer.appendChild(contenteditableDiv);
+  DivListContainer.appendChild(contenteditableList);
 }
 
 // Logo
@@ -84,12 +84,10 @@ function AddNewLogoEliment() {
   let contenteditableDiv = document.createElement("div");
 
   contenteditableDiv.className = "editableBox";
-  
-  
   contenteditableDiv.contentEditable = false;
 
   contenteditableDiv.innerHTML =` <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
-  <a onclick="showFunction1()"  class="navbar-brand  ms-3" href="#">
+  <a   class="navbar-brand  ms-3" href="#">
      <i class="fas fa-dice-d6 fa-2x"></i>
  </a>`;
   // let logoName = document.createTextNode("LOGO");
