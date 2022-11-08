@@ -47,11 +47,11 @@
     <a class="modal-close" onclick="closeFunction()"> <i class="far fa-times-circle"></i></a>
      <h4 class="mt-2">ADD NEW ELEMENT</h4>
             <div class="d-grid gap-2 col-6 mx-auto mt-3 mb-3">
-               <button id="addNewElement-btn-one" class="btn btn-primary" type="button">LOGO</button>
+               <button id="addNewElement-btn-one" class="btn btn-primary logoNav-add" type="button">LOGO</button>
             </div>
             <div class="d-grid gap-2 d-md-block ms-2">
                 <button id="addNewElement-btn-two" class="btn btn-primary btnNav-add" type="button">Nav Button</button>
-                <button id="addNewElement-btn-three" class="btn btn-primary" type="button">Nav Link</button>           
+                <button id="addNewElement-btn-three" class="btn btn-primary navList-add" type="button">Nav Link</button>           
             </div>
     </div>
     
@@ -101,14 +101,16 @@
     
     <!-- Container wrapper -->
     
-    <div class="container">
+    <div class="container" >
         <!-- Navbar brand -->
+        <div id="logoEditableId">
         <div class="editableBox" id="logoId">
          <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
          <a onclick="showFunction1()"  class="navbar-brand  ms-3" href="#">
             <i class="fas fa-dice-d6 fa-2x"></i>
         </a>
         </div>
+    </div>
         <!-- Toggle button -->
         <button
                 class="navbar-toggler"
@@ -159,7 +161,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item nav-one-item editableBox">
+                <li class="nav-item nav-one-item editableBox" id="blogsId">
                     <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
                     <a class="nav-link nav-one-link active"  id="blogId" aria-current="page" href="#"
                        contenteditable="true">Blog</a>
