@@ -84,7 +84,9 @@ function AddNewLogoEliment() {
   let contenteditableDiv = document.createElement("div");
 
   contenteditableDiv.className = "editableBox";
-  contenteditableDiv.contentEditable = true;
+  
+  
+  contenteditableDiv.contentEditable = false;
 
   contenteditableDiv.innerHTML =` <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <a onclick="showFunction1()"  class="navbar-brand  ms-3" href="#">
