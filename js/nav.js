@@ -31,8 +31,7 @@ let DivContainer = document.getElementById("navbar-navId");
 BtnAddElement.addEventListener("click", AddNewEliment);
 
 function AddNewEliment() {
-  let contenteditableDiv = document.createElement("li");
-
+  let contenteditableDiv = document.createElement("div");
   contenteditableDiv.className = " editableBox";
   //contenteditableDiv.contentEditable = true;
 
@@ -50,15 +49,15 @@ function AddNewEliment() {
   DivContainer.appendChild(contenteditableDiv);
 }
 
-function RemoveNewElement(){
+// remove function
 
+function RemoveNewElement() {
   DivContainer.removeChild(DivContainer.lastChild);
-  
-}
-function RemoveNewLogo(){
 
+}
+function RemoveNewLogo() {
   DivLogoContainer.removeChild(DivLogoContainer.lastChild);
-  
+
 }
 
 
@@ -70,18 +69,17 @@ BtnAddListElement.addEventListener("click", AddNewListEliment);
 
 function AddNewListEliment() {
   let contenteditableList = document.createElement("li");
-  
-  //contenteditableList.className = "editableBox";
+
   contenteditableList.className = " editableBox";
   //contenteditableList.contentEditable = true;
 
-  contenteditableList.innerHTML =`<span class="close" onclick="RemoveNewElement()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+  contenteditableList.innerHTML = `<span class="close" onclick="RemoveNewElement()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <a class="nav-link nav-one-link active"  id="blogId" aria-current="page" href="#"
      contenteditable="true">Nav Link</a>
 `;
   // let listName = document.createTextNode("Nav Link");
   console.log("add");
-  
+
   // newListDiv.classList.add("add-newListElement");
 
   DivListContainer.appendChild(contenteditableDiv);
@@ -97,11 +95,10 @@ function AddNewLogoEliment() {
   let contenteditableDiv = document.createElement("li");
 
   contenteditableDiv.className = "editableBox";
-  
-  
+
   contenteditableDiv.contentEditable = false;
 
-  contenteditableDiv.innerHTML =` <span class="close" onclick=" RemoveNewLogo()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+  contenteditableDiv.innerHTML = ` <span class="close" onclick=" RemoveNewLogo()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <a   class="navbar-brand  ms-3" href="#">
      <i class="fas fa-dice-d6 fa-2x"></i>
  </a>`;
