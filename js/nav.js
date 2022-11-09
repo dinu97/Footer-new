@@ -65,6 +65,7 @@ function RemoveNewLogo(){
 // ListItem
 let BtnAddListElement = document.querySelector(".navList-add");
 let DivListContainer = document.getElementById("navbar-navId");
+
 BtnAddListElement.addEventListener("click", AddNewListEliment);
 
 function AddNewListEliment() {
@@ -83,7 +84,7 @@ function AddNewListEliment() {
   
   // newListDiv.classList.add("add-newListElement");
 
-  DivListContainer.appendChild(contenteditableList);
+  DivListContainer.appendChild(contenteditableDiv);
 }
 
 // Logo
@@ -96,6 +97,8 @@ function AddNewLogoEliment() {
   let contenteditableDiv = document.createElement("li");
 
   contenteditableDiv.className = "editableBox";
+  
+  
   contenteditableDiv.contentEditable = false;
 
   contenteditableDiv.innerHTML =` <span class="close" onclick=" RemoveNewLogo()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>

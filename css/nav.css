@@ -482,9 +482,3 @@ body {
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0);
 }
-
-#logoEditableId{
-    justify-content: space-between!important;
-    flex-direction: row !important;
-    display: flex!important;
-}
