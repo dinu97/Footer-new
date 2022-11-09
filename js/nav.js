@@ -1,7 +1,6 @@
-let closebtns = document.getElementsByClassName("close");
 let modal = document.getElementById("headerComponentBox-Id");
 let modal2 = document.getElementById("ImageUpload-Id");
-
+let closebtns = document.getElementsByClassName("close");
 let i;
 
 for (i = 0; i < closebtns.length; i++) {
@@ -32,16 +31,16 @@ let DivContainer = document.getElementById("navbar-navId");
 BtnAddElement.addEventListener("click", AddNewEliment);
 
 function AddNewEliment() {
-  let contenteditableDiv = document.createElement("div");
+  let contenteditableDiv = document.createElement("li");
 
-  contenteditableDiv.className = "editableBox";
-  contenteditableDiv.contentEditable = true;
+  contenteditableDiv.className = " editableBox";
+  //contenteditableDiv.contentEditable = true;
 
   contenteditableDiv.innerHTML = `
-  <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+  <span class="closeNew" onclick="RemoveNewElement()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <button id="btnOne-1" type="button" class="btn btn-primary me-2 ms-1 HO-btn-style-one" >
   NAV BUTTON &nbsp; 
-  </button>
+  </button>  
 `;
   // let r = document.createTextNode("NAV BUTTON");
 
@@ -51,6 +50,18 @@ function AddNewEliment() {
   DivContainer.appendChild(contenteditableDiv);
 }
 
+function RemoveNewElement(){
+
+  DivContainer.removeChild(DivContainer.lastChild);
+  
+}
+function RemoveNewLogo(){
+
+  DivLogoContainer.removeChild(DivLogoContainer.lastChild);
+  
+}
+
+
 // ListItem
 let BtnAddListElement = document.querySelector(".navList-add");
 let DivListContainer = document.getElementById("navbar-navId");
@@ -59,16 +70,17 @@ BtnAddListElement.addEventListener("click", AddNewListEliment);
 function AddNewListEliment() {
   let contenteditableList = document.createElement("li");
   
-  contenteditableList.className = "editableBox";
-  contenteditableList.contentEditable = true;
+  //contenteditableList.className = "editableBox";
+  contenteditableList.className = " editableBox";
+  //contenteditableList.contentEditable = true;
 
-  contenteditableList.innerHTML =`<span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+  contenteditableList.innerHTML =`<span class="close" onclick="RemoveNewElement()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <a class="nav-link nav-one-link active"  id="blogId" aria-current="page" href="#"
      contenteditable="true">Nav Link</a>
 `;
   // let listName = document.createTextNode("Nav Link");
   console.log("add");
-  console.log("close");
+  
   // newListDiv.classList.add("add-newListElement");
 
   DivListContainer.appendChild(contenteditableList);
@@ -81,12 +93,12 @@ let DivLogoContainer = document.getElementById("logoEditableId");
 BtnAddLogoElement.addEventListener("click", AddNewLogoEliment);
 
 function AddNewLogoEliment() {
-  let contenteditableDiv = document.createElement("div");
+  let contenteditableDiv = document.createElement("li");
 
   contenteditableDiv.className = "editableBox";
   contenteditableDiv.contentEditable = false;
 
-  contenteditableDiv.innerHTML =` <span class="close" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+  contenteditableDiv.innerHTML =` <span class="close" onclick=" RemoveNewLogo()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <a   class="navbar-brand  ms-3" href="#">
      <i class="fas fa-dice-d6 fa-2x"></i>
  </a>`;
