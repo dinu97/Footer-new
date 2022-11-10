@@ -39,8 +39,8 @@
      <a  href="#" onclick="showFunction()"><i class="fas fa-plus-square"></i></a>
       <a href="#" onclick=""><i class="fas fa-trash"></i></a>
       <a href="#" onclick=""><i class="fas fa-clone"></i></a>
-      <a href="#" onclick=""><i class="fas fa-angle-up"></i></a>
-      <a href="#" onclick=""><i class="fas fa-angle-down"></i></a>
+      <a  href="#" onclick=""><i class="fas fa-angle-up"></i></a>
+      <a  href="#" onclick=""><i class="fas fa-angle-down"></i></a>
     </div>
     
     <div id="headerComponentBox-Id" class="headerComponentBox">
@@ -60,8 +60,9 @@
     <h3 class="mt-4">EDIT IMAGE</h3>
     <div class="row">
          <div class="col-md-6 ms-5 ">
-         <div class="ImageUploadBox-imageBox">
-         <img class="editable-image" src="https://footers-html.netlify.app/images/heroOne-image.png" alt="Image">
+         <div class="ImageUploadBox-imageBox preview" >
+             <img class="editable-image" src="https://footers-html.netlify.app/images/heroOne-image.png" alt="Image">
+             <!-- <img alt="" src="" class="profile-img" style="opacity: 0;"> -->
          </div>
          </div>
          <div class="row ms-5 mt-2">
@@ -74,7 +75,8 @@
 <div class="row">
   <div class="col-sm-5 col-md-6 ps-5 mt-3">
   <small>Upload an Image</small>
-   <button id="ImageUploadBox-btn-three" class="btn btn-primary btn-sm mt-3" type="button">Upload</button>   
+   <label for="image_uploads" id="ImageUploadBox-btn-three" class="btn btn-primary btn-sm mt-3 img-upload-btn" type="button">Upload</label>  
+   <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" style="opacity: 0;"> 
   </div>
   <div class="col-sm-7 offset-sm-2 col-md-6 offset-md-0">
     <div class="row justify-content-start mt-3">

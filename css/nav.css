@@ -487,3 +487,21 @@ body {
     flex-direction: row !important;
     display: flex!important;
 }
+
+.profile-img {
+    width: 167px;
+    height: 156px;
+    border-radius: 5px;
+    border: 1px solid #EEEEEE;
+    margin-left: 1.8rem !important;
+    margin-top: -1rem !important;
+}
+  
+  /* .img-wrapper {
+    padding: 20px;
+  }
+  .img-upload-btn {
+    border: 1px solid black;
+    padding: 10px 20px;
+  }
+   */

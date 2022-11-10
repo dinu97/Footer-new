@@ -2,7 +2,7 @@ let modal = document.getElementById("headerComponentBox-Id");
 let modal2 = document.getElementById("ImageUpload-Id");
 let closebtns = document.getElementsByClassName("close");
 let i;
-
+// function of the close button with the ho effect
 for (i = 0; i < closebtns.length; i++) {
   closebtns[i].addEventListener("click", function () {
     this.parentElement.remove();
@@ -24,7 +24,7 @@ function closeFunction1() {
   modal2.style.display = "none";
 }
 
-// Navigation-bar eliment add option
+// Navigation-bar add eliment function
 // button
 let BtnAddElement = document.querySelector(".btnNav-add");
 let DivContainer = document.getElementById("navbar-navId");
@@ -50,6 +50,7 @@ function AddNewEliment() {
   DivContainer.appendChild(contenteditableDiv);
 }
 
+//function that removes the newly added element
 function RemoveNewElement(){
 
   DivContainer.removeChild(DivContainer.lastChild);
@@ -108,5 +109,19 @@ function AddNewLogoEliment() {
   DivLogoContainer.appendChild(contenteditableDiv);
 
 
+}
+//image upload function
+
+const input = document.querySelector("input");
+const preview = document.querySelector(".preview");
+const para = document.querySelector(".editable-image");
+// const image = document.querySelector(".profile-img");
+input.addEventListener("change", updateImageDisplay);
+function updateImageDisplay() {
+  // para.style.display = "none";
+  const curFiles = input.files;
+  para.src = URL.createObjectURL(curFiles[0]);
+  
+  // image.style.opacity = 1;
 }
 
