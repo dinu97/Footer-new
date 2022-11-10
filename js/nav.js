@@ -100,7 +100,7 @@ function AddNewLogoEliment() {
 
   contenteditableDiv.innerHTML =` <span class="close" onclick="RemoveNewLogo()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <a   class="navbar-brand  ms-3" href="#">
-     <i class="fas fa-dice-d6 fa-2x"></i>
+  <img class="navbar-brand1" src="https://footers-html.netlify.app/images/heroOne-image.png" alt="Image">
  </a>`;
   // let logoName = document.createTextNode("LOGO");
   console.log("add");
@@ -112,16 +112,15 @@ function AddNewLogoEliment() {
 }
 //image upload function
 
-const input = document.querySelector("input");
-const preview = document.querySelector(".preview");
-const para = document.querySelector(".editable-image");
-// const image = document.querySelector(".profile-img");
+let input = document.querySelector("input");
+let para = document.querySelector(".editable-image");
+let navImage =document.querySelector(".navbar-brand1")
 input.addEventListener("change", updateImageDisplay);
 function updateImageDisplay() {
-  // para.style.display = "none";
-  const curFiles = input.files;
-  para.src = URL.createObjectURL(curFiles[0]);
-  
-  // image.style.opacity = 1;
+
+  let imageupload = input.files;
+  let imageURL =URL.createObjectURL(imageupload[0]);
+  para.src = imageURL;
+  navImage.src=imageURL;
 }
 
