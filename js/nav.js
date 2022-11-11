@@ -52,15 +52,11 @@ function AddNewEliment() {
 }
 
 //function that removes the newly added element
-function RemoveNewElement(){
-
+function RemoveNewElement() {
   DivContainer.removeChild(DivContainer.lastChild);
-  
 }
-function RemoveNewLogo(){
-
+function RemoveNewLogo() {
   DivLogoContainer.removeChild(DivLogoContainer.lastChild);
-  
 }
 
 // ListItem
@@ -70,18 +66,18 @@ BtnAddListElement.addEventListener("click", AddNewListEliment);
 
 function AddNewListEliment() {
   let contenteditableList = document.createElement("li");
-  
+
   //contenteditableList.className = "editableBox";
   contenteditableList.className = " editableBox";
   //contenteditableList.contentEditable = true;
 
-  contenteditableList.innerHTML =`<span class="close" onclick="RemoveNewElement()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+  contenteditableList.innerHTML = `<span class="close" onclick="RemoveNewElement()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <a class="nav-link nav-one-link active"  id="blogId" aria-current="page" href="#"
      contenteditable="true">Nav Link</a>
 `;
   // let listName = document.createTextNode("Nav Link");
   console.log("add");
- 
+
   // newListDiv.classList.add("add-newListElement");
 
   DivListContainer.appendChild(contenteditableList);
@@ -99,7 +95,7 @@ function AddNewLogoEliment() {
   contenteditableDiv.className = "editableBox";
   contenteditableDiv.contentEditable = false;
 
-  contenteditableDiv.innerHTML =` <span class="close" onclick="RemoveNewLogo()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+  contenteditableDiv.innerHTML = ` <span class="close" onclick="RemoveNewLogo()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <a   class="navbar-brand  ms-3" href="#">
   <img class="navbar-brand1" src="https://i.pinimg.com/736x/22/8c/61/228c6199281092080afc46541d64a9cb.jpg" alt="Image">
  </a>`;
@@ -108,28 +104,24 @@ function AddNewLogoEliment() {
   // newLogoDiv.classList.add("add-newLogoElement");
 
   DivLogoContainer.appendChild(contenteditableDiv);
-
-
 }
 //image upload function
 
 let input = document.querySelector("input");
 let para = document.querySelector(".editable-image");
-let navImage =document.querySelector(".navbar-brand1")
+let navImage = document.querySelector(".navbar-brand1");
 input.addEventListener("change", updateImageDisplay);
 function updateImageDisplay() {
-
   let imageupload = input.files;
-  let imageURL =URL.createObjectURL(imageupload[0]);
+  let imageURL = URL.createObjectURL(imageupload[0]);
   para.src = imageURL;
-  navImage.src=imageURL;
+  navImage.src = imageURL;
 }
 
 // // logo add button disabled
 // let navbar = document.querySelector(".logoEditableId");
 // let navAddBtn= document.querySelector(".logoNav-add");
 //  navAddBtn.disabled =true;
-
 
 //  navbar.addEventListener("change",buttonState);
 //  function buttonState(){
@@ -143,7 +135,3 @@ function updateImageDisplay() {
 //  navAddBtn.addEventListener("click", () => {
 //   console.log("You entered:", document.querySelector(".logoEditableId").value);
 //   });
-
-
-
-
