@@ -101,7 +101,7 @@ function AddNewLogoEliment() {
 
   contenteditableDiv.innerHTML =` <span class="close" onclick="RemoveNewLogo()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <a   class="navbar-brand  ms-3" href="#">
-  <img class="navbar-brand1" src="https://footers-html.netlify.app/images/heroOne-image.png" alt="Image">
+  <img class="navbar-brand1" src="https://i.pinimg.com/736x/22/8c/61/228c6199281092080afc46541d64a9cb.jpg" alt="Image">
  </a>`;
   // let logoName = document.createTextNode("LOGO");
   console.log("add");
