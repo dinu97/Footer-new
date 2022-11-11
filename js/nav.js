@@ -124,3 +124,25 @@ function updateImageDisplay() {
   navImage.src=imageURL;
 }
 
+// logo add button disabled
+let navbar = document.querySelector(".logoEditableId");
+let navAddBtn= document.querySelector(".logoNav-add");
+ navAddBtn.disabled =true;
+
+
+ navbar.addEventListener("change",buttonState);
+ function buttonState(){
+  if(document.querySelector(".logoEditableId").value ===""){
+    navAddBtn.disabled=true;
+  }
+  else{
+    navAddBtn.disabled=false;
+  }
+ }
+ navAddBtn.addEventListener("click", () => {
+  console.log("You entered:", document.querySelector(".logoEditableId").value);
+  });
+
+
+
+
