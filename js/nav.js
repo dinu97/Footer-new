@@ -37,10 +37,11 @@ function AddNewEliment() {
   //contenteditableDiv.contentEditable = true;
 
   contenteditableDiv.innerHTML = `
-  <span class="closeNew" onclick="RemoveNewElement()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
-  <button id="btnOne-1" type="button" class="btn btn-primary me-2 ms-1 HO-btn-style-one" >
-  NAV BUTTON &nbsp; 
-  </button>  
+    
+  <span class="close"  onclick="RemoveNewElement()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+                    <a id="btnOne-1"  class="btn btn-primary me-3 ms-3" href="#" role="button" contenteditable="true"> Start Free  &nbsp; </a>
+
+               
 `;
   // let r = document.createTextNode("NAV BUTTON");
 
@@ -124,24 +125,24 @@ function updateImageDisplay() {
   navImage.src=imageURL;
 }
 
-// logo add button disabled
-let navbar = document.querySelector(".logoEditableId");
-let navAddBtn= document.querySelector(".logoNav-add");
- navAddBtn.disabled =true;
+// // logo add button disabled
+// let navbar = document.querySelector(".logoEditableId");
+// let navAddBtn= document.querySelector(".logoNav-add");
+//  navAddBtn.disabled =true;
 
 
- navbar.addEventListener("change",buttonState);
- function buttonState(){
-  if(document.querySelector(".logoEditableId").value ===""){
-    navAddBtn.disabled=true;
-  }
-  else{
-    navAddBtn.disabled=false;
-  }
- }
- navAddBtn.addEventListener("click", () => {
-  console.log("You entered:", document.querySelector(".logoEditableId").value);
-  });
+//  navbar.addEventListener("change",buttonState);
+//  function buttonState(){
+//   if(document.querySelector(".logoEditableId").value ===""){
+//     navAddBtn.disabled=true;
+//   }
+//   else{
+//     navAddBtn.disabled=false;
+//   }
+//  }
+//  navAddBtn.addEventListener("click", () => {
+//   console.log("You entered:", document.querySelector(".logoEditableId").value);
+//   });
 
 
 

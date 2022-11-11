@@ -32,9 +32,16 @@ body {
 .dropdown-toggle:after {
     display: none !important;
 }
+.buttonName{
+    margin-top: 0rem!important;
+    margin-bottom: 0rem !important;
+}
+
+
 
 
 #btnOne-1 {
+   
     padding: 1.1rem 1.9rem 1.1rem 1.9rem !important;
     font-size: 1rem !important;
     border-radius: 0.55rem !important;
