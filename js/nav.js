@@ -100,7 +100,7 @@ function AddNewListEliment() {
 let BtnAddLogoElement = document.querySelector(".logoNav-add");
 let DivLogoContainer = document.getElementById("logoEditableId");
 
-let newElementLogoId = 3;
+let newElementLogoId = 4;
 BtnAddLogoElement.addEventListener("click", AddNewLogoEliment);
 
 function AddNewLogoEliment() {
@@ -110,7 +110,8 @@ function AddNewLogoEliment() {
   let img = document.getElementById("navbarlogo-Id");
   modal.style.display = "block";
   if (img == null) {
-    alert("img src is empty");
+    if(newElementLogoId <= 4){
+      alert("img src is empty");
     navBtn.disabled = false;
 
     let contenteditableDiv1 = document.createElement("div");
@@ -134,11 +135,20 @@ function AddNewLogoEliment() {
 
     DivLogoContainer.appendChild(contenteditableDiv1);
     closeFunction();
+    }
+    
   } else {
-    alert("img src is NOT empty");
-    navBtn.disabled = true;
+    if(DivLogoContainer.onchange){
+      navBtn.disabled = false;
+    }
+    else{
+      alert("img src is NOT empty");
+      navBtn.disabled = true;
+    }
+      
   }
 }
+
 
 //image upload function
 
@@ -167,3 +177,13 @@ function duplicateContents () {
   // copies the entire node into ther flex: styled row
   tempDestination.appendChild(newCopy);
 }
+
+// var i = 0;
+
+// function duplicate() {
+//     var original = document.getElementById('header-one-id' + i);
+//     var clone = original.cloneNode(true); // "deep" clone
+//    clone.id = "header-one-id" + ++i; // there can only be one element with an ID
+//     clone.onclick = duplicate; // event handlers are not cloned
+//     original.parentNode.appendChild(clone);
+// }
