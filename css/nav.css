@@ -142,19 +142,19 @@ body {
     margin: 0.2rem;
 }
 
+
+
 .headerComponentBox {
     display: none;
-    position: absolute;
+  
     width: 250px;
     height: 150px;
-    padding: 0.2rem;
+    /* padding: 0.2rem; */
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE; 
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     z-index: 1000;
-    right: 13.5rem;
-    top: 1.2rem;
     cursor: pointer;
 }
 
@@ -167,6 +167,7 @@ body {
     margin: 0.2rem;
     top: 0;
     right: 0;
+   
 }
 
 .headerComponentBox h4 {
@@ -174,6 +175,16 @@ body {
     font-size: 10px;
     text-align: center;
 }
+
+
+#header-one-id .headerComponentBox{
+    right: 45%;
+    top: 150%;
+   
+    position: absolute;
+}
+
+
 
 .elementEditableBox {
     position: absolute;
@@ -540,4 +551,3 @@ body {
     font-family: 'Gilroy SemiBold', sans-serif !important;
 }
 
-   

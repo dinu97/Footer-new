@@ -12,7 +12,7 @@ let modal2 = document.getElementById("ImageUpload-Id");
 // Delete elements red cross button
 function removeElement(element) {
   element.parentElement.remove();
-  // img.setAttribute("src"," ");
+ 
 }
 
 function showFunction() {
@@ -125,7 +125,7 @@ function AddNewLogoEliment() {
     contenteditableDiv1.contentEditable = false;
 
     contenteditableDiv1.innerHTML = ` <span class="close" onclick="removeElement(this);" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
-<a   class="navbar-brand  ms-3" href="#">
+<a  onclick="showFunction1()"  class="navbar-brand  ms-3" href="#">
 <img class="navbar-brand1" src="https://i.pinimg.com/736x/22/8c/61/228c6199281092080afc46541d64a9cb.jpg" alt="Image">
 </a>`;
     // let logoName = document.createTextNode("LOGO");
@@ -153,9 +153,11 @@ function updateImageDisplay() {
   navImage.src = imageURL;
 }
 
-function duplicateContents () {
 
-  let duplicateContent = document.getElementById('header-one-id');
+let duplicateContent = document.getElementById('header-one-id');
+  
+function duplicateContents () {
+  let contenteditableList = document.createElement("div");
   
   // When "true" is specified the node and its subtree are cloned.
   let newCopy = duplicateContent.cloneNode(true);
