@@ -1,12 +1,18 @@
 let modal = document.getElementById("headerComponentBox-Id");
 let modal2 = document.getElementById("ImageUpload-Id");
-let closebtns = document.getElementsByClassName("close");
-let i;
+// let closebtns = document.getElementsByClassName("close");
+// let i;
 // function of the close button with the ho effect
-for (i = 0; i < closebtns.length; i++) {
-  closebtns[i].addEventListener("click", function () {
-    this.parentElement.remove();
-  });
+// for (i = 0; i < closebtns.length; i++) {
+//   closebtns[i].addEventListener("click", function () {
+//     this.parentElement.remove();
+//   });
+// }
+
+// Delete elements red cross button
+function removeElement(element) {
+  element.parentElement.remove();
+  // img.setAttribute("src"," ");
 }
 
 function showFunction() {
@@ -29,35 +35,41 @@ function closeFunction1() {
 let BtnAddElement = document.querySelector(".btnNav-add");
 let DivContainer = document.getElementById("navbar-navId");
 BtnAddElement.addEventListener("click", AddNewEliment);
-
+let newElementIdNum = 0;
 function AddNewEliment() {
   let contenteditableDiv = document.createElement("div");
+  newElementIdNum++;
+  let newElementIdVal = "newBtnId-" + newElementIdNum;
+  let newElementId = newElementIdVal.toString();
+  contenteditableDiv.setAttribute("id", newElementId);
+
+  console.log("newElementId is :", newElementId);
 
   contenteditableDiv.className = " editableBox";
+
   //contenteditableDiv.contentEditable = true;
 
   contenteditableDiv.innerHTML = `
     
-  <span class="close"  onclick="RemoveNewElement()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
-                    <a id="btnOne-1"  class="btn btn-primary me-3 ms-3" href="#" role="button" contenteditable="true"> Start Free  &nbsp; </a>
-
-               
+  <span class="close"  onclick="removeElement(this);" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+                    <a id="btnOne-1"  class="btn btn-primary me-3 ms-3" href="#" role="button" contenteditable="true"> Start Free  &nbsp; </a>             
 `;
   // let r = document.createTextNode("NAV BUTTON");
 
-  console.log("add");
+  // console.log("add");
   // newDiv.classList.add('add-newElement');
 
   DivContainer.appendChild(contenteditableDiv);
 }
 
 //function that removes the newly added element
-function RemoveNewElement() {
-  DivContainer.removeChild(DivContainer.lastChild);
-}
-function RemoveNewLogo() {
-  DivLogoContainer.removeChild(DivLogoContainer.lastChild);
-}
+// function RemoveNewElement() {
+//   DivContainer.removeChild(DivContainer.lastChild);
+// }
+
+// function RemoveNewLogo() {
+//   DivLogoContainer.removeChild(DivLogoContainer.lastChild);
+// }
 
 // ListItem
 let BtnAddListElement = document.querySelector(".navList-add");
@@ -71,7 +83,7 @@ function AddNewListEliment() {
   contenteditableList.className = " editableBox";
   //contenteditableList.contentEditable = true;
 
-  contenteditableList.innerHTML = `<span class="close" onclick="RemoveNewElement()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+  contenteditableList.innerHTML = `<span class="close" onclick="removeElement(this);" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
   <a class="nav-link nav-one-link active"  id="blogId" aria-current="page" href="#"
      contenteditable="true">Nav Link</a>
 `;
@@ -84,27 +96,50 @@ function AddNewListEliment() {
 }
 
 // Logo
+
 let BtnAddLogoElement = document.querySelector(".logoNav-add");
 let DivLogoContainer = document.getElementById("logoEditableId");
 
+let newElementLogoId = 3;
 BtnAddLogoElement.addEventListener("click", AddNewLogoEliment);
 
 function AddNewLogoEliment() {
-  let contenteditableDiv = document.createElement("div");
+  //When there is already a logo image, button is disabled.
 
-  contenteditableDiv.className = "editableBox";
-  contenteditableDiv.contentEditable = false;
+  let navBtn = document.getElementById("addNewElement-btn-one");
+  let img = document.getElementById("navbarlogo-Id");
+  modal.style.display = "block";
+  if (img == null) {
+    alert("img src is empty");
+    navBtn.disabled = false;
 
-  contenteditableDiv.innerHTML = ` <span class="close" onclick="RemoveNewLogo()" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
-  <a   class="navbar-brand  ms-3" href="#">
-  <img class="navbar-brand1" src="https://i.pinimg.com/736x/22/8c/61/228c6199281092080afc46541d64a9cb.jpg" alt="Image">
- </a>`;
-  // let logoName = document.createTextNode("LOGO");
-  console.log("add");
-  // newLogoDiv.classList.add("add-newLogoElement");
+    let contenteditableDiv1 = document.createElement("div");
+    newElementLogoId++;
+    let newElementLogoIdVal = "newLogoBtnId-" + newElementLogoId;
+    let newElementLId = newElementLogoIdVal.toString();
+    contenteditableDiv1.setAttribute("id", newElementLId);
 
-  DivLogoContainer.appendChild(contenteditableDiv);
+    console.log("newElementId is :", newElementLId);
+
+    contenteditableDiv1.className = "editableBox";
+    contenteditableDiv1.contentEditable = false;
+
+    contenteditableDiv1.innerHTML = ` <span class="close" onclick="removeElement(this);" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
+<a   class="navbar-brand  ms-3" href="#">
+<img class="navbar-brand1" src="https://i.pinimg.com/736x/22/8c/61/228c6199281092080afc46541d64a9cb.jpg" alt="Image">
+</a>`;
+    // let logoName = document.createTextNode("LOGO");
+    console.log("add");
+    // newLogoDiv.classList.add("add-newLogoElement");
+
+    DivLogoContainer.appendChild(contenteditableDiv1);
+    closeFunction();
+  } else {
+    alert("img src is NOT empty");
+    navBtn.disabled = true;
+  }
 }
+
 //image upload function
 
 let input = document.querySelector("input");
@@ -118,20 +153,15 @@ function updateImageDisplay() {
   navImage.src = imageURL;
 }
 
-// // logo add button disabled
-// let navbar = document.querySelector(".logoEditableId");
-// let navAddBtn= document.querySelector(".logoNav-add");
-//  navAddBtn.disabled =true;
+function duplicateContents () {
 
-//  navbar.addEventListener("change",buttonState);
-//  function buttonState(){
-//   if(document.querySelector(".logoEditableId").value ===""){
-//     navAddBtn.disabled=true;
-//   }
-//   else{
-//     navAddBtn.disabled=false;
-//   }
-//  }
-//  navAddBtn.addEventListener("click", () => {
-//   console.log("You entered:", document.querySelector(".logoEditableId").value);
-//   });
+  let duplicateContent = document.getElementById('header-one-id');
+  
+  // When "true" is specified the node and its subtree are cloned.
+  let newCopy = duplicateContent.cloneNode(true);
+  
+  let tempDestination = document.querySelector(".destination");
+  
+  // copies the entire node into ther flex: styled row
+  tempDestination.appendChild(newCopy);
+}
