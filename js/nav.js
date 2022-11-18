@@ -127,7 +127,7 @@ function AddNewLogoEliment() {
 
     contenteditableDiv1.innerHTML = ` <span class="close" onclick="removeElement(this);" contenteditable="false"><a class="removeRow" href="#"><i class="fas fa-times"></i></a></span>
 <a  onclick="showFunction1()"  class="navbar-brand  ms-3" href="#">
-<img class="navbar-brand1" src="https://i.pinimg.com/736x/22/8c/61/228c6199281092080afc46541d64a9cb.jpg" alt="Image">
+<img   id="navbarlogo-Id" class="navbar-brand1" src="https://i.pinimg.com/736x/22/8c/61/228c6199281092080afc46541d64a9cb.jpg" alt="Image">
 </a>`;
     // let logoName = document.createTextNode("LOGO");
     console.log("add");
@@ -152,22 +152,50 @@ function AddNewLogoEliment() {
 
 //image upload function
 
-let input = document.querySelector("input");
-let para = document.querySelector(".editable-image");
-let navImage = document.querySelector(".navbar-brand1");
+// let input = document.querySelector("input");
+// let para = document.querySelector(".editable-image");
+// let navImage = document.querySelector(".navbar-brand1");
+// input.addEventListener("change", updateImageDisplay);
+// function updateImageDisplay() {
+//   let imageupload = input.files;
+//   let imageURL = URL.createObjectURL(imageupload[0]);
+//   para.src = imageURL;
+//   navImage.src = imageURL;
+// }
+
+const input = document.querySelector("input");
+const preview = document.querySelector(".preview");
+const para = document.querySelector(".editable-image");
+
 input.addEventListener("change", updateImageDisplay);
+
 function updateImageDisplay() {
-  let imageupload = input.files;
-  let imageURL = URL.createObjectURL(imageupload[0]);
-  para.src = imageURL;
-  navImage.src = imageURL;
+  const reader = new FileReader();
+  const curFiles = input.files;
+  reader.addEventListener("load", () =>{
+    para.src = URL.createObjectURL(curFiles[0]);
+    //console.log(reader.result);
+    localStorage.setItem("recent-image",reader.result);
+  });
+  reader.readAsDataURL(curFiles[0]);
+}
+
+
+function chooseImage()
+{
+  const recentImage = localStorage.getItem("recent-image");
+  if (recentImage !== null)
+  {
+    document.getElementById('navbarlogo-Id').setAttribute("src", recentImage );  
+  }
+  
 }
 
 
 let duplicateContent = document.getElementById('header-one-id');
   
 function duplicateContents () {
-  let contenteditableList = document.createElement("div");
+  
   
   // When "true" is specified the node and its subtree are cloned.
   let newCopy = duplicateContent.cloneNode(true);
@@ -178,12 +206,26 @@ function duplicateContents () {
   tempDestination.appendChild(newCopy);
 }
 
-// var i = 0;
+// var j = 0;
 
 // function duplicate() {
-//     var original = document.getElementById('header-one-id' + i);
+//     var original = document.getElementById('header-one-id' + j);
+//     let tempDestination = document.querySelector(".destination");
 //     var clone = original.cloneNode(true); // "deep" clone
-//    clone.id = "header-one-id" + ++i; // there can only be one element with an ID
+//    clone.id = "header-one-id" + ++j; // there can only be one element with an ID
 //     clone.onclick = duplicate; // event handlers are not cloned
-//     original.parentNode.appendChild(clone);
+//     tempDestination.parentNode.appendChild(clone);
 // }
+
+// const buttonsContainer = document.getElementById("header-one-id");
+// let DivContain = document.getElementById(".destination");
+
+//   const button = document.createElement("div");
+ 
+//   buttonsContainer.addEventListener("click",duplicateContents); 
+//   function duplicateContents () {
+//     console.log("add");
+//     DivContain.appendChild(button);
+//   }
+ 
+
