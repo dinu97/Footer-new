@@ -217,15 +217,17 @@ function duplicateContents () {
 //     tempDestination.parentNode.appendChild(clone);
 // }
 
-// const buttonsContainer = document.getElementById("header-one-id");
-// let DivContain = document.getElementById(".destination");
-
-//   const button = document.createElement("div");
- 
-//   buttonsContainer.addEventListener("click",duplicateContents); 
-//   function duplicateContents () {
-//     console.log("add");
-//     DivContain.appendChild(button);
-//   }
+// function duplicate() {
+//   var clone = $(".header-one-id").clone(false);
+//   clone.find("*[id]").map(function(index, el) {
+//     el.id = el.id + "_cloned_" 
+//             + $.now() 
+//             * ( index + 1 );
+//     return el
+//   });
+//   clone.attr("id", function(index,id) {
+//     return id +"_cloned_"+ $("[id^=header-one-id]").length
+//   }).appendTo(".destination");
+// }
  
 
