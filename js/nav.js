@@ -152,6 +152,18 @@ function AddNewLogoEliment() {
 
 //image upload function
 
+// let input = document.querySelector(".imageUpload");
+        // let para = document.querySelector(".editable-image");
+        // let navImage = document.querySelector(".navbar-brand1");
+        // input.addEventListener("change", updateImageDisplay);
+
+        // function updateImageDisplay() {
+        //     let imageupload = input.files;
+        //     let imageURL = URL.createObjectURL(imageupload[0]);
+        //     para.src = imageURL;
+        //     navImage.src = imageURL;
+        // }
+
 // let input = document.querySelector("input");
 // let para = document.querySelector(".editable-image");
 // let navImage = document.querySelector(".navbar-brand1");
