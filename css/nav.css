@@ -550,4 +550,14 @@ body {
     background-color: #212D63 !important;
     font-family: 'Gilroy SemiBold', sans-serif !important;
 }
+#hederOneNavLinkId{
+    justify-content: space-between!important;
+    flex-direction: row !important;
+    display: flex!important;
+}
 
+#headerOneButtonId{
+    justify-content: space-between!important;
+    flex-direction: row !important;
+    display: flex!important;
+}

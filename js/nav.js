@@ -33,7 +33,7 @@ function closeFunction1() {
 // Navigation-bar add eliment function
 // button
 let BtnAddElement = document.querySelector(".btnNav-add");
-let DivContainer = document.getElementById("navbar-navId");
+let DivContainer = document.getElementById("headerOneButtonId");
 BtnAddElement.addEventListener("click", AddNewEliment);
 let newElementIdNum = 0;
 function AddNewEliment() {
@@ -73,7 +73,7 @@ function AddNewEliment() {
 
 // ListItem
 let BtnAddListElement = document.querySelector(".navList-add");
-let DivListContainer = document.getElementById("navbar-navId");
+let DivListContainer = document.getElementById("hederOneNavLinkId");
 BtnAddListElement.addEventListener("click", AddNewListEliment);
 
 function AddNewListEliment() {
