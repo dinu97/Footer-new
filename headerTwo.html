@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <link rel="stylesheet" href="css/headerTwo.css" class="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+   
+  </head>
+
+<body>
+  <!-- <i class="bi bi-credit-card">/i> -->
+
+<!-- Your code goes here -->
+
+<!-- Navbar -->
+<nav id="headerTwo" class="navbar navbar-expand-lg  navbar-light bg-light nav-two  section-componentBox">
+
+    <div class="sectionEditableBox">
+      <a id="headerTwo_addNewElement" onclick=" addNewItemsToHeaderTwo_Modal()"><i class="fas fa-plus-square"></i></a>
+      <a id="deleteHeaderTwo" href="#" onclick="deleteComponent(this);"><i class="fas fa-trash"></i></a>
+      <a onclick=""><i class="fas fa-clone"></i></a>
+      <a class="moveUpBtn" onclick="ChangePositionUP(headerTwo);"><i class="fas fa-angle-up"></i></a>
+      <a class="moveDownBtn" onclick="ChangePositionDOWN(headerTwo);"><i class="fas fa-angle-down"></i></a>
+    </div>
+    
+        
+<!--  Add new element box  -->
+<div id="headerTwo_addNewElementBoxModal" class=""></div>
+
+    
+<!--  Nav elements editable link  -->
+<div id="elementEditableBox-Id" class="elementEditableBox">
+    <a class="modal-close" onclick="closeHeaderTwo_EditableElementModel()"><i class="far fa-times-circle"></i></a>
+        <h4 class="mt-2">EDIT ELEMENT</h4>
+        
+             <div class="row justify-content-start ms-3 mt-4">
+                <div class="col-8">
+                <small  for="color">Font Color</small>
+                </div>
+                <div class="col-2">
+               <div class="elementEditable-colorBox">
+                 <input type="color" id="color" name="fontColor" value="#000000"></div>
+               </div>
+             </div>
+           
+            <div class="row justify-content-start ms-3 mt-3">
+                <div class="col-8">
+                <small for="BackgroundColor">Background Color</small>
+                </div>
+                <div class="col-4">
+               <div class="elementEditable-colorBox"> 
+                <input type="color" id="BackgroundColor" name="fontColor" value="#FFFFFF"></div>
+               </div>
+             </div>
+             
+
+          
+            <div class="row justify-content-start ms-3 mt-3">
+                <div class="col-5 ">
+                <small for="border-radius">Fill</small>
+                </div>
+                <div class="col-7">
+               <div class="elementEditable-colorBox-fill">
+                 <input type="number" id="border-radius" class="form-control" placeholder="100%" value="0" min="0" max="50"/></div>
+               </div>
+             </div>
+           
+             <div class="row mt-3">
+             <div class="form-check ms-4 mb-1">
+                <input id="ExUrlInputRadio" onclick="toggleInput()" class="form-check-input" type="radio" name="flexRadioDefault"/>
+                <label id="ExUrlLabel" class="form-check-label small" for="flexRadioDefault1"  >External URL</label>
+             </div>
+                <div class="col-12">
+                    <div class=" ms-2 me-2">
+                      <input id="ExUrlInput" type="url" class="form-control" placeholder="Enter URL" disabled/>
+                    </div>
+                </div>
+             </div>
+             <div class="row mt-2">
+                <div class="form-check ms-4 mb-1">
+                <input id="InUrlInputRadio" onclick="toggleInput()" class="form-check-input" type="radio" name="flexRadioDefault"  checked="checked"/>
+                <label id="InUrlLabel" class="form-check-label" for="flexRadioDefault1">Select Page</label>
+             </div>
+                <div class="col-12">
+                     <label class="visually-hidden" for="inlineFormSelectPref" >Preference</label>
+                        <select id="InUrlInput" class="select ms-2 w-100">
+                         <option value="1">One</option>
+                         <option value="2">Two</option>
+                         <option value="3">Three</option>
+                         <option value="4">Four</option>
+                         <option value="5">Five</option>
+                         <option value="6">Six</option>
+                         <option value="7">Seven</option>
+                         <option value="8">Eight</option>
+                        </select>
+  
+                </div>
+             </div>    
+             
+             <div class="d-grid gap-2 d-md-block ms-4 mt-3">
+                <button id="elementEditableBox-btn-one" class="btn btn-primary ms-1" type="button">CANCEL</button>
+                <button id="elementEditableBox-btn-two" class="btn btn-primary ms-3" type="button">&nbsp;&nbsp;SAVE&nbsp;&nbsp;</button>
+            </div>    
+    </div>
+    
+    
+    <!-- Container wrapper -->
+    <div class="container">
+        <!-- Navbar brand -->
+        <div  id="headerTwo_LogoDiv">
+          <div id="headerTwo_SubLogoEditableBox" class="editableBox" >
+          <span class="close" contenteditable="false" onclick="removeElement(this);"><a class="removeRow"><i class="fas fa-times"></i></a></span>
+          <a  class="navbar-brand ms-3"   href="#">
+          <img id="headerTwo_SubLogoImage" class="navbar-brand1" src="images/headerOneLogo.png" alt="Image">
+          </a>
+        </div>
+          </div>
+
+
+        <!-- Toggle button -->
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#headerTwo_ColSpaceDiv"
+                aria-controls="headerTwo_ColSpaceDiv"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="headerTwo_ColSpaceDiv">
+      
+            <!-- Left links -->
+            <!-- Left links -->
+            <ul class="navbar-nav ms-auto  mb-2 mb-lg-0" id="headerTwo_UnOderList_1">
+            <div class="hederTwoNavLink" id="hederTwoNavLinkId"></div>
+                <li id="headerTwo_NavLink_1"  class="nav-item nav-two-item dropdown editableBox">
+                 <span class="close" onclick="removeElement(this);"><a class="removeRow"><i class="fas fa-times"></i></a></span>
+                    <a
+                            class="nav-link nav-two-link active dropdown-toggle"
+                            href="#"
+                            id="headerTwo_SubNavLink_1" 
+                            role="button"
+                            data-mdb-toggle="dropdown"
+                            aria-expanded="false"
+                            contenteditable="true"
+                    >
+                        Templates &nbsp; <i class="fas fa-angle-down"></i>
+                    </a>
+                    <!-- Dropdown menu -->
+                    <ul  id="headerTwo_UnOderList_2" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#" contenteditable="true">Action</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" contenteditable="true">Another action</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider"/>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" contenteditable="true">Something else here</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="headerTwo_NavLink_2" class="nav-item nav-two-item editableBox">
+                 <span class="close" onclick="removeElement(this);"><a class="removeRow"><i class="fas fa-times"></i></a></span>
+                    <a  id="headerTwo_SubNavLink_2"  class="nav-link nav-two-link active" aria-current="page" href="#" contenteditable="true">Blog</a>
+                </li>
+                <li id="headerTwo_NavLink_3" class="nav-item nav-two-item editableBox">
+                 <span class="close" onclick="removeElement(this);"><a class="removeRow"><i class="fas fa-times"></i></a></span>
+                    <a  id="headerTwo_SubNavLink_3" class="nav-link nav-two-link active" href="#" contenteditable="true">Pricing</a>
+                </li>
+                <!-- Navbar dropdown -->
+
+            </ul>
+            <!-- Left links -->
+
+        <!-- Left links -->
+
+        <div class="d-flex align-items-center">
+        <div class="headerTwoButton" id="headerTwoButtonId"></div>
+        <div class="editableBox">
+         <span class="close" contenteditable="false" onclick="removeElement(this);"><a class="removeRow"><i class="fas fa-times"></i></a></span>
+            <a id="headerTwo_Button_1" href="#" role="button"  class="btn btn-outline-primary btn-rounded me-3 " contenteditable="true"  >
+                Sign Up  &nbsp;
+            </a>
+
+            </div>
+            <div class="editableBox">
+             <span class="close" onclick="removeElement(this);"><a class="removeRow"><i class="fas fa-times"></i></a></span>
+            <button  id="headerTwo_Button_2"  type="button" class="btn btn-primary btn-rounded  me-3" contenteditable="true" onclick="showHeaderTwo_EditableElementModel();" >
+                Sign In
+            </button>
+            </div>
+        </div>
+    </div>
+    <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+
+<!-- ************************* -->
+
+<script src="js/headerTwo.js"></script>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+
+</body>
+</html>
