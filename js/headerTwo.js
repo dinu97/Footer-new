@@ -28,7 +28,22 @@ let getInputValue = function( input ) {
 
 
 // Update the colors and border radius.
-let updateStyle = function () {
+let updateStyle = function (event) {
+	
+	let styleValue = getInputValue( event.target );
+	
+  if (event.target === txtColor) {
+    editButton.style.color = styleValue;
+  } else if (event.target === bgColor) {
+    editButton.style.backgroundColor = styleValue;
+  } else if (event.target === border_radius) {
+    editButton.style.borderRadius = styleValue + 'px';
+  }
+    
+};
+
+// Update the colors and border radius.
+/*let updateStyle = function () {
 	
 	let styleValue = getInputValue( this );
 	
@@ -40,7 +55,8 @@ let updateStyle = function () {
     editButton.style.borderRadius = styleValue + 'px';
   }
     
-};
+};*/
+
 //change the border radius.
 // let borderRadius = function() {
 //     let styleValue2 = getInputValue( this );
